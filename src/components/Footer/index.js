@@ -1,5 +1,6 @@
 import React from 'react'
 import { FooterContainer, FooterWrapper, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
+import { FaInstagram, FaTwitter, FaTwitch, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -51,11 +52,11 @@ const Footer = () => {
                         <WebsiteRights>Copyright</WebsiteRights>
 
                         <SocialIcons>
-                            <SocialIconLink>K</SocialIconLink>
-                            <SocialIconLink>K</SocialIconLink>
-                            <SocialIconLink>K</SocialIconLink>
-                            <SocialIconLink>K</SocialIconLink>
-                            <SocialIconLink>K</SocialIconLink>
+                            <SocialIconLink href ="/" targe="_blank" aria-label="Twitch"> <FaTwitch/> </SocialIconLink>
+                            <SocialIconLink href ="/" targe="_blank" aria-label="Youtube"> <FaYoutube/> </SocialIconLink>
+                            <SocialIconLink href ="/" targe="_blank" aria-label="Twitter"> <FaTwitter/> </SocialIconLink>
+                            <SocialIconLink href ="/" targe="_blank" aria-label="Linkedin"> <FaLinkedin/> </SocialIconLink>
+                            <SocialIconLink href ="/" targe="_blank" aria-label="Instagram"> <FaInstagram/> </SocialIconLink>
                         </SocialIcons>
 
                     </SocialMediaWrap>

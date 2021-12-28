@@ -1,14 +1,43 @@
 import React from 'react'
-import {HeaderDiv, HeaderTitleBackground, HeaderTitle} from './NavbarElements'
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import {FaBars} from "react-icons/fa";
 
 const Navbar = () => {
     return (
-        <HeaderDiv>
+        <Nav>
+            <NavbarContainer>
+                <NavLogo>OHSEA</NavLogo>
+                <MobileIcon>
+                    <FaBars style ={{color: 'white'}}/>
+                </MobileIcon>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks> About </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks> About </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks> About </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks> About </NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks> About </NavLinks>
+                    </NavItem>
+                </NavMenu>
 
-           
-                <HeaderTitle>OHSEA</HeaderTitle>
+                <NavBtn> 
+                    <NavBtnLink>Sign Up</NavBtnLink>
+                </NavBtn>
 
-        </HeaderDiv>
+                <NavBtn> 
+                    <NavBtnLink>Log In</NavBtnLink>
+                </NavBtn>
+
+            </NavbarContainer>
+        </Nav>
     )
 }
 

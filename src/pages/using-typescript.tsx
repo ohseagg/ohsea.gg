@@ -2,8 +2,8 @@
 import * as React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/PageLayout/layout"
+import Seo from "../components/SEO/seo"
 
 type DataProps = {
   site: {

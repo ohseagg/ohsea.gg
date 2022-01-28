@@ -1,41 +1,39 @@
 import React from 'react'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import {Nav, NavbarContainer, NavBrand, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtnContainer, NavBtn, NavBtnLink1, NavBtnLink2} from './NavbarElements'
 import {FaBars} from "react-icons/fa";
 
 const Navbar = ({toggle}) => {
     return (
         <Nav>
             <NavbarContainer>
-                <NavLogo>OHSEA</NavLogo>
+                <NavBrand>
+                    <img src={require('../../../images/Logo.png')} alt="OHSEA Logo"/>
+                    <NavLogo>OHSEA</NavLogo>
+                </NavBrand>
                 <MobileIcon onClick = {toggle}>
                     <FaBars style ={{color: 'white'}}/>
                 </MobileIcon>
-                <NavMenu>
-                    <NavItem>
-                        <NavLinks> About </NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks> About </NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks> About </NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks> About </NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks> About </NavLinks>
-                    </NavItem>
-                </NavMenu>
-
-                <NavBtn> 
-                    <NavBtnLink>Sign Up</NavBtnLink>
-                </NavBtn>
-
-                <NavBtn> 
-                    <NavBtnLink>Log In</NavBtnLink>
-                </NavBtn>
-
+                <div>
+                    <NavMenu>
+                        <NavItem>
+                            <NavLinks> Events & Leagues </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks> About </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks> Discord </NavLinks>
+                        </NavItem>
+                        <NavBtnContainer>
+                            <NavBtn> 
+                                <NavBtnLink1>Sign Up</NavBtnLink1>
+                            </NavBtn>
+                        </NavBtnContainer>
+                        <NavBtn> 
+                            <NavBtnLink2>Log In</NavBtnLink2>
+                        </NavBtn>
+                    </NavMenu>
+                </div>
             </NavbarContainer>
         </Nav>
     )

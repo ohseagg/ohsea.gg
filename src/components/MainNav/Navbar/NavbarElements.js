@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {colors} from '../../../globals/colors.js'
+import {NavLink as Link} from 'react-router-dom'
 
 export const Nav = styled.nav`
     background: ${colors.background};
@@ -31,12 +32,19 @@ export const NavBrand = styled.div`
     height: 100%;
     align-items: center; 
     margin-left: 24px; 
+    cursor: pointer; 
+
 `
 
-export const NavLogo = styled.h1`
+export const NavImg = styled(Link)`
+    margin-top: 1.3rem;
+    margin-right: 10px;
+`
+
+export const NavLogo = styled(Link)`
     color: ${colors.white}; 
     justify-self: flex-start; // ?
-    cursor: pointer; 
+    font-weight: 700;
     font-size: 1.75rem; 
     text-decoration: none; 
 `
@@ -55,19 +63,19 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px; 
+    padding: 0 0.85rem; 
+
 `
 
-export const NavLinks = styled.p`
+export const NavLinks = styled(Link)`
     color: ${colors.white}; 
     display: flex; 
     align-items: center; 
     text-decoration: none; 
-    padding: 0 0.85rem; 
     height: 100%; 
     cursor: pointer; 
-
     &.active {
-        border-bottom: 3px solid green; 
+        color: ${colors.red1};
     }
 `
 
@@ -101,43 +109,43 @@ export const NavBtn = styled.nav`
     }
 `
     
-export const NavBtnLink1 = styled.div`
-    border-radius: 6px;
+export const NavBtnLink1 = styled(Link)`
+    border-radius: 10px;
     background: ${colors.red1}; 
     white-space: nowrap; 
-    padding: 7px 22px 7px 22px; 
+    padding: 5px 22px 5px 22px; 
     box-sizing: border-box;
     color: ${colors.white}; 
     font-size: 0.9rem; 
     outline: none;
     border: none; 
+    box-shadow: none;
     cursor: pointer; 
-    transition: all 0.2 ease-in-out; 
+    transition: all 0.2s ease-in-out; 
     text-decoration: none; 
     &:hover{
         transition: all 0.2s ease-in-out; 
-        background: ${colors.white}; ; 
-        color: black;
+        box-shadow: 0px 3px 20px -2px ${colors.red1};
     }
 `
 
-export const NavBtnLink2 = styled.div`
-    border-radius: 6px;
+export const NavBtnLink2 = styled(Link)`
+    border-radius: 10px;
     background: transparent; 
     white-space: nowrap; 
-    padding: 7px 22px 7px 22px; 
+    padding: 5px 22px 5px 22px; 
     box-sizing: border-box;
     color: ${colors.red1}; 
     font-size: 0.9rem;
     font-weight: 700;
     outline: none;
     border: 2px solid ${colors.red1};
+    box-shadow: none;
     cursor: pointer; 
-    transition: all 0.2 ease-in-out; 
+    transition: all 0.2s ease-in-out; 
     text-decoration: none; 
     &:hover{
         transition: all 0.2s ease-in-out; 
-        background: ${colors.white}; ; 
-        color: black;
+        box-shadow: 0px -3px 20px -2px ${colors.red1} inset;
     }
 `

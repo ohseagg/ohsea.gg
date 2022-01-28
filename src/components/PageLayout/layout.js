@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./layout.css"
 import Footer from '../Footer'
 import MainNav from '../MainNav'
+import {BrowserRouter as Router} from 'react-router-dom';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,9 +19,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <MainNav/>
-      <main>{children}</main>
-      <Footer/>
+      <Router>
+        <MainNav/>
+         <main>{children}</main>
+        <Footer/>
+      </Router>
     </>
   )
 }

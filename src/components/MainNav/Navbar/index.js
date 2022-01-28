@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav, NavbarContainer, NavBrand, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtnContainer, NavBtn, NavBtnLink1, NavBtnLink2} from './NavbarElements'
+import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtnContainer, NavBtn, NavBtnLink1, NavBtnLink2} from './NavbarElements'
 import {FaBars} from "react-icons/fa";
 
 const Navbar = ({toggle}) => {
@@ -7,8 +7,10 @@ const Navbar = ({toggle}) => {
         <Nav>
             <NavbarContainer>
                 <NavBrand>
-                    <img src={require('../../../images/Logo.png')} alt="OHSEA Logo"/>
-                    <NavLogo>OHSEA</NavLogo>
+                    <NavImg to='/'>
+                        <img src={require('../../../images/Logo.png').default}/>
+                    </NavImg>
+                    <NavLogo to='/'>OHSEA</NavLogo>
                 </NavBrand>
                 <MobileIcon onClick = {toggle}>
                     <FaBars style ={{color: 'white'}}/>
@@ -16,21 +18,28 @@ const Navbar = ({toggle}) => {
                 <div>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks> Events & Leagues </NavLinks>
+                            <NavLinks to='/events-leagues' activeStyle>
+                                Events & Leagues
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks> About </NavLinks>
+                            <NavLinks to='/about' activeStyle>
+                                About 
+                            </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks> Discord </NavLinks>
+                            {/* just open discord invite link? */}
+                            <NavLinks to='/discord'>
+                                Discord
+                            </NavLinks>
                         </NavItem>
                         <NavBtnContainer>
                             <NavBtn> 
-                                <NavBtnLink1>Sign Up</NavBtnLink1>
+                                <NavBtnLink1 to='/sign-up'>Sign Up</NavBtnLink1>
                             </NavBtn>
                         </NavBtnContainer>
                         <NavBtn> 
-                            <NavBtnLink2>Log In</NavBtnLink2>
+                            <NavBtnLink2 to='/log-in'>Log In</NavBtnLink2>
                         </NavBtn>
                     </NavMenu>
                 </div>

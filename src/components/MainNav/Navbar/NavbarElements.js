@@ -5,7 +5,7 @@ import {NavLink as Link} from 'react-router-dom'
 export const Nav = styled.nav`
     background: ${colors.background};
     height: 80px;
-    margin-top: -60px; 
+    margin-top: 10px; 
     display: flex; 
     justify-content: center; 
     font-size: 0.9rem; 
@@ -24,7 +24,7 @@ export const NavbarContainer = styled.div`
     z-index: 1; 
     width: 100%; 
     padding: 0 24px; 
-    max-width: 1100px;
+    max-width: 1200px;
 `
 
 export const NavBrand = styled.div`
@@ -37,7 +37,7 @@ export const NavBrand = styled.div`
 `
 
 export const NavImg = styled(Link)`
-    margin-top: 1.3rem;
+    margin-top: 1.6rem;
     margin-right: 10px;
 `
 

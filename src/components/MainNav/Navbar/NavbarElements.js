@@ -113,7 +113,7 @@ export const NavBtnLink1 = styled(Link)`
     border-radius: 10px;
     background: ${colors.red1}; 
     white-space: nowrap; 
-    padding: 5px 22px 5px 22px; 
+    padding: 6px 26px 6px 26px; 
     box-sizing: border-box;
     color: ${colors.white}; 
     font-size: 0.9rem; 
@@ -125,7 +125,7 @@ export const NavBtnLink1 = styled(Link)`
     text-decoration: none; 
     &:hover{
         transition: all 0.2s ease-in-out; 
-        box-shadow: 0px 3px 20px -2px ${colors.red1};
+        box-shadow: 0px 4px 17px 0px ${colors.red1};
     }
 `
 
@@ -133,7 +133,7 @@ export const NavBtnLink2 = styled(Link)`
     border-radius: 10px;
     background: transparent; 
     white-space: nowrap; 
-    padding: 5px 22px 5px 22px; 
+    padding: 6px 26px 6px 26px; 
     box-sizing: border-box;
     color: ${colors.red1}; 
     font-size: 0.9rem;
@@ -146,6 +146,6 @@ export const NavBtnLink2 = styled(Link)`
     text-decoration: none; 
     &:hover{
         transition: all 0.2s ease-in-out; 
-        box-shadow: 0px -3px 20px -2px ${colors.red1} inset;
+        box-shadow: 0px 0px 20px -1px ${colors.red1} inset;
     }
 `

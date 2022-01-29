@@ -2,20 +2,73 @@
 
 .hero-section {
     width: 1100px;
-    margin: 100px auto 0 auto;
+    margin: 100px auto 100px auto;
     display: flex;
     align-items: space-between;
     flex-direction: row;
 }
 
 .hero-section {
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 550px;
+    }
     h1 {
-        width: 600px;
         color: colors.$color-white;
         font-weight: 700;
         font-size: 3.5rem;
         line-height: 1em;
         margin-top: 0;
+    }
+    h4 {
+        color: colors.$color-white;
+        font-weight: 300;
+        font-size: 1.15rem;
+        margin-top: 15px;
+        line-height: 1.5em;
+    }
+    .btns {
+        display: flex;
+        flex-direction: row;
+    }
+    div {
+        div {
+            div {
+                margin-top: 15px;
+                border-radius: 10px;
+                padding: 6px 26px 6px 26px; 
+                display: flex;
+                align-items: center;
+                font-size: 0.9rem; 
+                outline: none;
+                cursor: pointer; 
+                text-decoration: none; 
+                transition: all 0.2s ease-in-out;
+                &:first-of-type {
+                    margin-right: 15px;
+                    background: colors.$color-red; 
+                    color: colors.$color-white; 
+                    box-shadow: none;
+                    border: none; 
+                    &:hover{
+                        transition: all 0.2s ease-in-out; 
+                        box-shadow: 0px 4px 17px -1px colors.$color-red;
+                    }
+                }
+                &:last-of-type {
+                    background: transparent; 
+                    color: colors.$color-red; 
+                    box-shadow: none;
+                    border: 2px solid colors.$color-red;
+                    font-weight: 700;
+                    &:hover{
+                        transition: all 0.2s ease-in-out; 
+                        box-shadow: 0px 0px 18px -3px colors.$color-red inset;
+                    }
+                }
+            }
+        }
     }
 }
 

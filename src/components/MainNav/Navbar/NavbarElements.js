@@ -75,7 +75,7 @@ export const NavLinks = styled(Link)`
     height: 100%; 
     cursor: pointer; 
     &.active {
-        color: ${colors.red1};
+        color: ${colors.red};
     }
 `
 
@@ -111,7 +111,7 @@ export const NavBtn = styled.nav`
     
 export const NavBtnLink1 = styled(Link)`
     border-radius: 10px;
-    background: ${colors.red1}; 
+    background: ${colors.red}; 
     white-space: nowrap; 
     padding: 6px 26px 6px 26px; 
     box-sizing: border-box;
@@ -125,7 +125,7 @@ export const NavBtnLink1 = styled(Link)`
     text-decoration: none; 
     &:hover{
         transition: all 0.2s ease-in-out; 
-        box-shadow: 0px 4px 17px 0px ${colors.red1};
+        box-shadow: 0px 4px 17px 0px ${colors.red};
     }
 `
 
@@ -135,17 +135,17 @@ export const NavBtnLink2 = styled(Link)`
     white-space: nowrap; 
     padding: 6px 26px 6px 26px; 
     box-sizing: border-box;
-    color: ${colors.red1}; 
+    color: ${colors.red}; 
     font-size: 0.9rem;
     font-weight: 700;
     outline: none;
-    border: 2px solid ${colors.red1};
+    border: 2px solid ${colors.red};
     box-shadow: none;
     cursor: pointer; 
     transition: all 0.2s ease-in-out; 
     text-decoration: none; 
     &:hover{
         transition: all 0.2s ease-in-out; 
-        box-shadow: 0px 0px 20px -1px ${colors.red1} inset;
+        box-shadow: 0px 0px 20px -1px ${colors.red} inset;
     }
 `

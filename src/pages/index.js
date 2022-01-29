@@ -10,9 +10,18 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className="hero-section">
-      <h1>
-        BRINGING <span className="red-text">E-SPORTS</span> TO HIGH SCHOOLS ACROSS ONTARIO
-      </h1>
+      <div className="left">
+        <h1>
+          BRINGING <span className="red-text">E-SPORTS</span> TO HIGH SCHOOLS ACROSS ONTARIO
+        </h1>
+        <h4>
+          The Ontario High School E-Sports Association is ... ... ... ... ... ... ... test test test ... ... ... ... ... ...
+        </h4>
+        <div className="btns">
+          <div className="btn1">Sign Up</div>
+          <div className="btn2">Join Our Discord!</div>
+        </div>
+      </div>
       <div className="hero-img">
 
       </div>

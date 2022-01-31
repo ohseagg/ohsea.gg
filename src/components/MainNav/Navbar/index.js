@@ -1,5 +1,5 @@
 import React from 'react'
-import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtnContainer, NavBtn, NavBtnLink1, NavBtnLink2} from './NavbarElements'
+import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {FaBars} from "react-icons/fa";
 
 const Navbar = ({toggle}) => {
@@ -33,13 +33,8 @@ const Navbar = ({toggle}) => {
                                 Discord
                             </NavLinks>
                         </NavItem>
-                        <NavBtnContainer>
-                            <NavBtn> 
-                                <NavBtnLink1 to='/sign-up'>Sign Up</NavBtnLink1>
-                            </NavBtn>
-                        </NavBtnContainer>
                         <NavBtn> 
-                            <NavBtnLink2 to='/log-in'>Log In</NavBtnLink2>
+                            <NavBtnLink to='/log-in'>Log In</NavBtnLink>
                         </NavBtn>
                     </NavMenu>
                 </div>

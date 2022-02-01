@@ -1,10 +1,12 @@
 import React from 'react'
 import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import {FaBars} from "react-icons/fa";
+import "../../../styles/style.scss"
 
 const Navbar = ({toggle}) => {
     return (
         <Nav>
+            <div className="bg-ellipse"></div>
             <NavbarContainer>
                 <NavBrand>
                     <NavImg to='/'>

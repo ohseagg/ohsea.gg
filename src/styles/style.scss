@@ -62,12 +62,15 @@
     position: absolute;
     right: 0;
     transform: translate(30%, -200px);
-    background-color: #1D3557;
+    background-color: colors.$color-blue2;
     border-radius: 50%;
     height: 400px;
     width: 80%;
-    opacity: 20%;
+    opacity: 40%;
     filter: blur(200px);
+    @media screen and (max-width: 685px) {
+        transform: translate(10%, -200px);
+    }
 }
 
 .subtitle {

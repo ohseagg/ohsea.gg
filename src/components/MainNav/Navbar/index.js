@@ -8,7 +8,7 @@ const Navbar = ({toggle}) => {
             <NavbarContainer>
                 <NavBrand>
                     <NavImg to='/'>
-                        <img src={require('../../../images/Logo.png').default}/>
+                        <img src={require('../../../images/Logo.png').default} alt="OHSEA logo"/>
                     </NavImg>
                     <NavLogo to='/'>OHSEA</NavLogo>
                 </NavBrand>

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import "./layout.scss"
 import Footer from '../Footer'
-import {BrowserRouter as Router} from 'react-router-dom';
+//import {BrowserRouter as Router} from 'react-router-dom';
 import MainNav from '../../components/MainNav'
 
 const Layout = ({ children }) => {
@@ -19,11 +19,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Router>
+      
         <MainNav/>
         <main>{children}</main>
         <Footer/>
-      </Router>
     </>
   )
 }

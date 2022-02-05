@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {colors} from '../../../globals/colors.js'
-import {NavLink as Link} from 'react-router-dom'
+import {Link} from 'gatsby'
 
 export const Nav = styled.nav`
     background: ${colors.background};

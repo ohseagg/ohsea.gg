@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {colors} from '../../../globals/colors.js'
+import {colors} from '../../../globals/colors'
 import {Link} from 'gatsby' // changed to gatsby links  for now as react-router-dom conflicts the build 
 
 export const Nav = styled.nav`

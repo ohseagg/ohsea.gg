@@ -1,66 +1,41 @@
 import React from 'react'
-import { FooterContainer, FooterWrapper, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
+import { FooterContainer, FooterWrapper, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLink, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
 import { FaInstagram, FaTwitter, FaTwitch, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrapper>
-                <FooterLinksContainer>
+                <SocialMediaWrap>
+                    <SocialLogo>OHSEA</SocialLogo>
+                    <WebsiteRights>Copyright</WebsiteRights>
 
+                    <SocialIcons>
+                        <SocialIconLink href ="/" target="_blank" aria-label="Twitch"> <FaTwitch/> </SocialIconLink>
+                        <SocialIconLink href ="/" target="_blank" aria-label="Twitter"> <FaTwitter/> </SocialIconLink>
+                        <SocialIconLink href ="/" target="_blank" aria-label="Youtube"> <FaYoutube/> </SocialIconLink>
+                        <SocialIconLink href ="/" target="_blank" aria-label="Linkedin"> <FaLinkedin/> </SocialIconLink>
+                        <SocialIconLink href ="/" target="_blank" aria-label="Instagram"> <FaInstagram/> </SocialIconLink>
+                    </SocialIcons>
+
+                </SocialMediaWrap>
+
+                <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                                <FooterLinkTitle> Kenny </FooterLinkTitle>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
+                                <FooterLink>Events & Leagues</FooterLink>
+                                <FooterLink>About</FooterLink>
+                                <FooterLink>Account</FooterLink>
+                                <FooterLink>Support</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                                <FooterLinkTitle> Kenny </FooterLinkTitle>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                                <FooterLinkTitle> Kenny </FooterLinkTitle>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                                <FooterLinkTitle> Kenny </FooterLinkTitle>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
-                                <FooterLink> About Us</FooterLink>
+                                <FooterLink>Guidelines</FooterLink>
+                                <FooterLink>Partners</FooterLink>
+                                <FooterLink>Privacy</FooterLink>
+                                <FooterLink>Terms of Use</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>
-
-                <SocialMedia>
-                    <SocialMediaWrap>
-                        <SocialLogo>OHSEA</SocialLogo>
-                        <WebsiteRights>Copyright</WebsiteRights>
-
-                        <SocialIcons>
-                            <SocialIconLink href ="/" targe="_blank" aria-label="Twitch"> <FaTwitch/> </SocialIconLink>
-                            <SocialIconLink href ="/" targe="_blank" aria-label="Youtube"> <FaYoutube/> </SocialIconLink>
-                            <SocialIconLink href ="/" targe="_blank" aria-label="Twitter"> <FaTwitter/> </SocialIconLink>
-                            <SocialIconLink href ="/" targe="_blank" aria-label="Linkedin"> <FaLinkedin/> </SocialIconLink>
-                            <SocialIconLink href ="/" targe="_blank" aria-label="Instagram"> <FaInstagram/> </SocialIconLink>
-                        </SocialIcons>
-
-                    </SocialMediaWrap>
-                </SocialMedia>
 
             </FooterWrapper>
         </FooterContainer>

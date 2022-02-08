@@ -21,8 +21,8 @@ const IndexPage = () => (
           <div className="btn-fill">Get Started</div>
         </div>
       </div>
-      <div className="hero-img">
-
+      <div className="right">
+        <img src={require('../images/TestDisplay.png').default} alt="test display img"/>
       </div>
     </div>
   </Layout>

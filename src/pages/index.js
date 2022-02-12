@@ -5,6 +5,8 @@ import  "../styles/style.scss"
 
 import Layout from "../components/PageLayout/layout"
 import Seo from "../components/SEO/seo"
+import LargeEvent from "../components/LandingPageComponents/largeEvent"
+import SmallEvent from "../components/LandingPageComponents/smallEvent"
 
 const IndexPage = () => (
   <Layout className="index-layout">
@@ -27,8 +29,15 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="events-section">
-        <div className="medium-header">
-          Upcoming Events
+        <div className="medium-header margin-title">Upcoming Events</div>
+        <div className="events">
+          <LargeEvent/>
+          <LargeEvent/>
+        </div>
+        <div className="events">
+          <SmallEvent/>
+          <SmallEvent/>
+          <SmallEvent/>
         </div>
       </div>
     </div>

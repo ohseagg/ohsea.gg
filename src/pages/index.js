@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { GoChevronRight } from 'react-icons/go';
 import  "../styles/style.scss"
 
 import Layout from "../components/PageLayout/layout"
@@ -29,16 +30,19 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="events-section">
-        <div className="medium-header margin-title">Upcoming Events</div>
+        <div className="medium-header">Upcoming Events</div>
         <div className="events">
           <LargeEvent/>
           <LargeEvent/>
         </div>
-        <div className="events">
+        <div className="events s-events">
           <SmallEvent/>
           <SmallEvent/>
           <SmallEvent/>
         </div>
+        <Link to="/" className="subtitle red-text" >
+          See More <GoChevronRight className="chevron-link"/>
+        </Link>
       </div>
     </div>
   </Layout>

@@ -42,7 +42,6 @@ export const NavImg = styled(Link)`
 
 export const NavLogo = styled(Link)`
     color: ${colors.white}; 
-    justify-self: flex-start; // ?
     font-weight: 700;
     font-size: 1.75rem; 
     text-decoration: none; 

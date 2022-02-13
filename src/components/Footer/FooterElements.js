@@ -72,10 +72,20 @@ export const SocialMediaWrap = styled.div`
     }
 `
 
+export const Brand = styled.div`
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+`
+
+export const FooterImg = styled(Link)`
+    margin-bottom: 0.7rem;
+    // margin-top 0.3rem;
+    margin-right: 10px;
+`
+
 export const SocialLogo = styled.p`
     color: ${colors.white}; 
-    justify-self: start; 
-    cursor: pointer; 
     text-decoration: none; 
     font-size: 1.5rem; 
     display: flex; 

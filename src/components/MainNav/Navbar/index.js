@@ -20,7 +20,7 @@ const Navbar = ({toggle}) => {
                 <div>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='/events-leagues' activeStyle>
+                            <NavLinks to='/events' activeStyle>
                                 Events & Leagues
                             </NavLinks>
                         </NavItem>
@@ -36,7 +36,7 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                         <NavBtn> 
-                            <NavBtnLink to='/log-in'>Log In</NavBtnLink>
+                            <NavBtnLink to='/account'>Log In</NavBtnLink>
                         </NavBtn>
                     </NavMenu>
                 </div>

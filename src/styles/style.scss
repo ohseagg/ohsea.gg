@@ -234,3 +234,19 @@
         margin: 1.5vw;
     }
 }
+
+.bg-events:before {
+    height: 650px;
+}
+
+.bg-events {
+    .top-section {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 400px;
+        margin-top: 125px;
+    }
+    .large-header {
+        text-align: center;
+    }
+}

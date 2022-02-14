@@ -6,6 +6,7 @@ import Layout from "../components/PageLayout/layout"
 import Seo from "../components/SEO/seo"
 import displayEvent from "../globals/displayEvent"
 import GameSelect from "../components/Events/gameSelect"
+import PrizeSlider from "../components/Events/prizeSlider"
 
 class Events extends React.Component {
     constructor(){
@@ -25,6 +26,7 @@ class Events extends React.Component {
                         <h1 className="large-header">
                             MAKE YOUR MARK IN<br/><span className="red-text large-header">ONTARIO ESPORTS</span>
                         </h1>
+                        <PrizeSlider />
                     </div>
                 </div>
             </Layout>

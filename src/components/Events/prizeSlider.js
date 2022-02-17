@@ -29,47 +29,38 @@ class PrizeSlider extends Component {
         };
         return (
             <ThemeProvider theme={theme}>
-                <div className="filter-options">
-                    <div className="games-content">
-                        <h3>Games</h3>
-                        
-                    </div>
-                    <div className="slider-content">
-                        <h3>Prize Pool</h3>
-                        <div className="prize-slider-container">
-                            <Slider
-                                getAriaLabel={() => 'Prize Pool Range'}
-                                defaultValue={this.state.vals}
-                                max={1000}
-                                step={10}
-                                onChange={handleChange}
-                                valueLabelDisplay="auto"
-                                color="primary"
-                                sx={{
-                                    '& .MuiSlider-valueLabel': {
-                                        lineHeight: 1.2,
-                                        fontSize: 11,
-                                        fontWeight: 700,
-                                        background: 'unset',
-                                        padding: 0,
-                                        width: 34,
-                                        height: 34,
-                                        borderRadius: '50% 50% 50% 0',
-                                        backgroundColor: '#de333faa',
-                                        transformOrigin: 'bottom left',
-                                        transform: 'translate(50%, -100%) rotate(-45deg) scale(0)',
-                                        '&:before': { display: 'none' },
-                                        '&.MuiSlider-valueLabelOpen': {
-                                        transform: 'translate(50%, -100%) rotate(-45deg) scale(1)',
-                                        },
-                                        '& > *': {
-                                        transform: 'rotate(45deg)',
-                                        },
-                                    },
-                                }}
-                            />
-                        </div>
-                    </div>
+                <div className="prize-slider-container">
+                    <Slider
+                        getAriaLabel={() => 'Prize Pool Range'}
+                        defaultValue={this.state.vals}
+                        max={1000}
+                        step={10}
+                        onChange={handleChange}
+                        valueLabelDisplay="auto"
+                        color="primary"
+                        sx={{
+                            '& .MuiSlider-valueLabel': {
+                                lineHeight: 1.2,
+                                fontSize: 11,
+                                fontWeight: 700,
+                                background: 'unset',
+                                padding: 0,
+                                width: 34,
+                                height: 34,
+                                borderRadius: '50% 50% 50% 0',
+                                backgroundColor: '#de333faa',
+                                transformOrigin: 'bottom left',
+                                transform: 'translate(50%, -100%) rotate(-45deg) scale(0)',
+                                '&:before': { display: 'none' },
+                                '&.MuiSlider-valueLabelOpen': {
+                                transform: 'translate(50%, -100%) rotate(-45deg) scale(1)',
+                                },
+                                '& > *': {
+                                transform: 'rotate(45deg)',
+                                },
+                            },
+                        }}
+                    />
                 </div>
             </ThemeProvider>
         )

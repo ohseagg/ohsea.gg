@@ -1,8 +1,14 @@
 import * as React from "react"
 import { Component } from "react"
 import { Link } from "gatsby"
-import "../../styles/style.scss"
 import displayEvent from "../../globals/displayEvent"
+import {
+    Container,
+    Box,
+    LeftArrow,
+    RightArrow,
+} from './gameSelectElements'
+import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
 
 class GameSelect extends Component {
     constructor(props) {
@@ -11,7 +17,13 @@ class GameSelect extends Component {
 
     render() {
         return (
-            null
+            <Container>
+                <LeftArrow/>
+                <Box>
+                    All
+                </Box>
+                <RightArrow/>
+            </Container>
         )
     }
   }

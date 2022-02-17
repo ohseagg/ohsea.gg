@@ -26,7 +26,16 @@ class Events extends React.Component {
                         <h1 className="large-header">
                             MAKE YOUR MARK IN<br/><span className="red-text large-header">ONTARIO ESPORTS</span>
                         </h1>
-                        <PrizeSlider />
+                        <div className="filter-options">
+                            <div className="games-content">
+                                <h3 className="games-title">Games</h3>
+                                <GameSelect/>
+                            </div>
+                            <div className="slider-content">
+                                <h3>Prize Pool</h3>
+                                <PrizeSlider />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </Layout>

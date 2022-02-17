@@ -33,27 +33,28 @@ class PrizeSlider extends Component {
                     <Slider
                         getAriaLabel={() => 'Prize Pool Range'}
                         defaultValue={this.state.vals}
+                        // keep max a multiple of 100
                         max={1000}
-                        step={10}
+                        step={100}
                         onChange={handleChange}
                         valueLabelDisplay="auto"
                         color="primary"
+                        valueLabelDisplay="on"
                         sx={{
                             '& .MuiSlider-valueLabel': {
                                 lineHeight: 1.2,
-                                fontSize: 11,
+                                fontSize: 12,
                                 fontWeight: 700,
                                 background: 'unset',
                                 padding: 0,
-                                width: 34,
-                                height: 34,
-                                borderRadius: '50% 50% 50% 0',
-                                backgroundColor: '#de333faa',
+                                width: 30,
+                                height: 30,
+                                color: '#de333f',
                                 transformOrigin: 'bottom left',
-                                transform: 'translate(50%, -100%) rotate(-45deg) scale(0)',
+                                transform: 'translate(50%, -20%) rotate(-45deg) scale(0)',
                                 '&:before': { display: 'none' },
                                 '&.MuiSlider-valueLabelOpen': {
-                                transform: 'translate(50%, -100%) rotate(-45deg) scale(1)',
+                                transform: 'translate(50%, 110%) rotate(-45deg) scale(1)',
                                 },
                                 '& > *': {
                                 transform: 'rotate(45deg)',

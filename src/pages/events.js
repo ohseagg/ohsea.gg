@@ -41,7 +41,7 @@ class EventsPage extends React.Component {
                         </h1>
                         <div className="filter-options">
                             <div className="games-content">
-                                <h3 className="games-title">Games</h3>
+                                <h3>Games</h3>
                                 <GameSelect
                                 switchHandler={this.arrowHandler.bind(this)}
                                 displayGame={this.state.display}

@@ -32,6 +32,11 @@ export const LeftArrow = styled(GoChevronLeft)`
     width: 24px;
     height: auto;
     margin: 3px;
+    transition: all 0.2s ease-in-out; 
+    &:hover{
+        transition: all 0.2s ease-in-out; 
+        color: ${colors.red};
+    }
 `
 
 export const RightArrow = styled(GoChevronRight)`
@@ -39,4 +44,9 @@ export const RightArrow = styled(GoChevronRight)`
     width: 24px;
     height: auto;
     margin: 3px;
+    transition: all 0.2s ease-in-out; 
+    &:hover{
+        transition: all 0.2s ease-in-out; 
+        color: ${colors.red};
+    }
 `

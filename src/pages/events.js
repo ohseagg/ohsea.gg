@@ -37,7 +37,7 @@ class EventsPage extends React.Component {
                 <div className="dark-bg bg-events">
                     <div className="top-section">
                         <h1 className="large-header">
-                            MAKE YOUR MARK IN<br/><span className="red-text large-header">ONTARIO ESPORTS</span>
+                            MAKE YOUR MARK IN<br/><span className="red-text">ONTARIO ESPORTS</span>
                         </h1>
                         <div className="filter-options">
                             <div className="games-content">
@@ -51,6 +51,10 @@ class EventsPage extends React.Component {
                                 <h3>Prize Pool</h3>
                                 <PrizeSlider />
                             </div>
+                        </div>
+
+                        <div className="btn-fill filter-btn">
+                            Filters
                         </div>
                     </div>
                 </div>

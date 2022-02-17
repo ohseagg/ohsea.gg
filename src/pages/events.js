@@ -8,7 +8,11 @@ import displayEvent from "../globals/displayEvent"
 import GameSelect from "../components/Events/gameSelect"
 import PrizeSlider from "../components/Events/prizeSlider"
 
-class Events extends React.Component {
+Number.prototype.mod = function(n) {
+    return ((this % n) + n) % n;
+}
+
+class EventsPage extends React.Component {
     constructor(){
         super()
         this.state = {
@@ -16,6 +20,15 @@ class Events extends React.Component {
             displays: 3
         }
     };
+
+    arrowHandler = (type) => {
+        console.log(type)
+        console.log(this.state.display)
+        this.setState((preState) => {
+            return {display: type === 1 ? (preState.display - 1).mod(preState.displays)
+            : (preState.display + 1).mod(preState.displays)};
+        });
+    }    
 
     render () {
         return (
@@ -29,7 +42,10 @@ class Events extends React.Component {
                         <div className="filter-options">
                             <div className="games-content">
                                 <h3 className="games-title">Games</h3>
-                                <GameSelect/>
+                                <GameSelect
+                                switchHandler={this.arrowHandler.bind(this)}
+                                displayGame={this.state.display}
+                                />
                             </div>
                             <div className="slider-content">
                                 <h3>Prize Pool</h3>
@@ -43,4 +59,4 @@ class Events extends React.Component {
     }
 }
 
-export default Events
+export default EventsPage

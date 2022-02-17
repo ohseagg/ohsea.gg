@@ -12,29 +12,31 @@ export const Container = styled.div`
 export const Box = styled.div`
     border-radius: 10px;
     padding: 6px 20px 6px 20px; 
+    margin: 0px 10px;
     display: flex;
     align-items: center;
-    font-size: 0.9rem; 
-
     outline: none;
+    
+    font-size: 0.9rem; 
     text-decoration: none; 
+    color: ${colors.white};
+    font-weight: 400;
+    user-select: none;
+
     background: "transparent"; 
     border: 2px solid ${colors.white}; 
-    color: ${colors.white};
 `
 
 export const LeftArrow = styled(GoChevronLeft)`
     color: ${colors.white};
     width: 24px;
     height: auto;
-    margin: 10px;
-    cursor: pointer;
+    margin: 3px;
 `
 
 export const RightArrow = styled(GoChevronRight)`
     color: ${colors.white};
     width: 24px;
     height: auto;
-    margin: 10px;
-    cursor: pointer;
+    margin: 3px;
 `

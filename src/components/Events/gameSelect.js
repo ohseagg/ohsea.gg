@@ -1,28 +1,51 @@
 import * as React from "react"
 import { Component } from "react"
 import { Link } from "gatsby"
-import displayEvent from "../../globals/displayEvent"
 import {
     Container,
     Box,
     LeftArrow,
     RightArrow,
 } from './gameSelectElements'
-import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
+import EventsPage from '../../pages/events'
 
 class GameSelect extends Component {
     constructor(props) {
         super(props)
+        this.displayGameText = this.displayGameText.bind(this)
+    }
+
+    displayGameText = () => {
+        switch(this.props.displayGame) {
+            case 0:
+                return (
+                    <>All</>
+                );
+            case 1:
+                return (
+                    <>League</>
+                );
+            case 2:
+                return (
+                    <>Valorant</>
+                );
+        }
     }
 
     render() {
+        const l = 1
+        const r = 2
         return (
             <Container>
-                <LeftArrow/>
+                <div onClick={() => this.props.switchHandler(l)} style={{cursor:'pointer'}}>
+                    <LeftArrow/>
+                </div>
                 <Box>
-                    All
+                    {this.displayGameText()}
                 </Box>
-                <RightArrow/>
+                <div onClick={() => this.props.switchHandler(r)} style={{cursor:'pointer'}}> 
+                    <RightArrow/>
+                </div>
             </Container>
         )
     }

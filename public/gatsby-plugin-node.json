@@ -1,0 +1,27 @@
+{
+  "paths": [
+    {
+      "path": "/using-dsg"
+    },
+    {
+      "path": "/404/"
+    },
+    {
+      "path": "/404.html"
+    },
+    {
+      "path": "/"
+    },
+    {
+      "path": "/page-2/"
+    },
+    {
+      "path": "/using-ssr/"
+    },
+    {
+      "path": "/using-typescript/"
+    }
+  ],
+  "redirects": [],
+  "pathPrefix": ""
+}

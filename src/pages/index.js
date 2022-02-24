@@ -35,14 +35,24 @@ const IndexPage = () => (
           <LargeEvent/>
           <LargeEvent/>
         </div>
-        <div className="events s-events">
+
+        {/* 
+        components below are for smaller (monthly random games , etc.) events
+           - not needed right now
+        */}
+
+        {/* <div className="events s-events">
           <SmallEvent/>
           <SmallEvent/>
-          <SmallEvent/>
+          <div className="last-s-event">
+            <SmallEvent/>
+          </div>
         </div>
         <Link to="/" className="subtitle red-text" >
           See More <GoChevronRight className="chevron-link"/>
-        </Link>
+        </Link> */}
+
+
       </div>
     </div>
   </Layout>

@@ -53,7 +53,7 @@ export const NavMenu = styled.ul`
     margin-top: auto;
     list-styled: none; 
     text-align: center; 
-
+    list-style-type: none;
     @media screen and (max-width: 768px) {
         display: none; 
     }
@@ -61,7 +61,9 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px; 
-    padding: 0 0.85rem; 
+    padding: 0 0.5rem; 
+    display: flex;
+    align-items: center;
 
 `
 
@@ -70,8 +72,16 @@ export const NavLinks = styled(Link)`
     display: flex; 
     align-items: center; 
     text-decoration: none; 
-    height: 100%; 
+    height: 48%; 
     cursor: pointer; 
+    background-color: 'transparent'; 
+    padding: 0px 15px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out; 
+    &:hover{
+        background-color: #ffffff11; 
+        transition: all 0.1s ease-in-out; 
+    }
     &.active {
         color: ${colors.red};
     }
@@ -95,7 +105,8 @@ export const MobileIcon = styled.div`
 export const NavBtn = styled.nav`
     display: flex; 
     margin-top: -10px;
-    margin-left: 1rem;
+    margin-left: 1.3rem;
+   
     @media screen and (max-width: 768px){
         display: none;
     }

@@ -8,6 +8,7 @@ import Layout from "../components/PageLayout/layout"
 import Seo from "../components/SEO/seo"
 import LargeEvent from "../components/LandingPageComponents/largeEvent"
 import SmallEvent from "../components/LandingPageComponents/smallEvent"
+import data from "../data/landingEventData"
 
 const IndexPage = () => (
   <Layout className="index-layout">
@@ -32,8 +33,8 @@ const IndexPage = () => (
       <div className="events-section">
         <div className="medium-header">Upcoming Events</div>
         <div className="events">
-          <LargeEvent/>
-          <LargeEvent/>
+          <LargeEvent data={data.LgEvent1}/>
+          <LargeEvent data={data.LgEvent2}/>
         </div>
 
         {/* 

@@ -30,7 +30,7 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            {/* just open discord invite link? */}
+                            {/* just open discord invite link*/}
                             <NavLinks to='/discord'>
                                 Discord
                             </NavLinks>

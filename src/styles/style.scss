@@ -61,6 +61,7 @@
         }
 
         img {
+            user-select: none;
             display: block;
             width: 100%;
             height: auto;
@@ -203,13 +204,31 @@
     }
 }
 
+.l-event-wrapper {
+    position: relative;
+
+    .game-img-wrapper {
+        position: absolute;
+        bottom: -6px;
+        right: 25px;
+        padding: 0;
+        pointer-events: none;
+        user-select: none;
+        .game-img {
+            height: 275px;
+            width: auto;
+            margin: 0;
+        }
+    }
+}
+
 .l-event-container {
     width: 600px;
     height: 350px;
     border-radius: 50px;
     background-color: #ffffffda;
     border: 2px solid colors.$color-grey;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     margin: 0px 25px;
     padding: 40px 40px;
     display: flex;
@@ -271,7 +290,7 @@
     border-radius: 40px;
     background-color: #ffffffda;
     border: 2px solid colors.$color-grey;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(15px);
     margin: 20px;
     @media screen and (max-width: 1407px) {
         width: 27.6vw;

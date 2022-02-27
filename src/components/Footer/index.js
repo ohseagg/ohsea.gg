@@ -13,7 +13,7 @@ const Footer = () => {
                         </FooterImg>
                         <SocialLogo>OHSEA</SocialLogo>
                     </Brand>
-                    <WebsiteRights>Copyright</WebsiteRights>
+                    <WebsiteRights>© {new Date().getFullYear()} Ontario High School Esports Association</WebsiteRights>
 
                     <SocialIcons>
                         <SocialIconLink href ="/" target="_blank" aria-label="Discord"> <FaDiscord/> </SocialIconLink>

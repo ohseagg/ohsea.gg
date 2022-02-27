@@ -54,7 +54,12 @@ export const FooterLink = styled(Link)`
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size:0.9rem;
-    cursor: pointer;
+
+    &:hover{
+        cursor: pointer;    
+        color : ${colors.red};
+    }
+    
 `
 
 //social icons 

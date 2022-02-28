@@ -8,6 +8,7 @@ import Seo from "../components/SEO/seo"
 import HeroSection from "../components/LandingPageComponents/heroSection"
 import LargeEvent from "../components/LandingPageComponents/largeEvent"
 //import SmallEvent from "../components/LandingPageComponents/smallEvent"
+import WelcomeSnippet from "../components/LandingPageComponents/welcomeSnippet/welcomeSnippet";
 
 import data from "../data/landingEventData"
 import  "../styles/style.scss"
@@ -39,6 +40,8 @@ const IndexPage = () => (
         </Link> */}
       </div>
 
+      <WelcomeSnippet/>
+
       <div className="text-section">
         <div className="section">
           <div className="header">Join Our Community</div>
@@ -60,6 +63,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+    
   </Layout>
 )
 

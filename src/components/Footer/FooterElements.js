@@ -54,10 +54,12 @@ export const FooterLink = styled(Link)`
     text-decoration: none;
     margin-bottom: 0.5rem;
     font-size:0.9rem;
+    transition: all 0.1s ease-in-out; 
 
     &:hover{
         cursor: pointer;    
         color : ${colors.red};
+        transition: all 0.1s ease-in-out; 
     }
     
 `
@@ -114,4 +116,10 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
     color: ${colors.white}; 
     font-size: 24px;
+    transition: all 0.1s ease-in-out; 
+    
+    &:hover{
+        color: ${colors.red}; 
+        transition: all 0.1s ease-in-out; 
+    }
 `

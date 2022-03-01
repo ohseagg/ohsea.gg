@@ -78,6 +78,7 @@ export const NavLinks = styled(Link)`
     padding: 0px 15px;
     border-radius: 10px;
     transition: all 0.1s ease-in-out; 
+    font-family: 'UsualRegular', sans-serif;
     &:hover{
         background-color: #ffffff11; 
         transition: all 0.1s ease-in-out; 
@@ -116,7 +117,7 @@ export const NavBtnLink = styled(Link)`
     border-radius: 10px;
     background: ${colors.red}; 
     white-space: nowrap; 
-    padding: 6px 26px 6px 26px; 
+    padding: 7px 22px 7px 22px; 
     box-sizing: border-box;
     color: ${colors.white}; 
     font-size: 0.9rem; 

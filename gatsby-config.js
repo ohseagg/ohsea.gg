@@ -31,7 +31,16 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/Logo.png`, // This path is relative to the root of the site.
         fonts: [
-          `Roboto Condensed\:300,400,700`
+          `UsualLight`,
+          `UsualLightItalic`,
+          `UsualRegular`,
+          `UsualItalic`,
+          `UsualMedium`,
+          `UsualMediumItalic`,
+          `UsualBold`,
+          `UsualBoldItalic`,
+          `UsualExtraBold`,
+          `UsualExtraBoldItalic`,
         ]
       },
     },

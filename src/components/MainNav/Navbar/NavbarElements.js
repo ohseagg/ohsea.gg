@@ -42,7 +42,7 @@ export const NavImg = styled(Link)`
 
 export const NavLogo = styled(Link)`
     color: ${colors.white}; 
-    font-weight: 700;
+    font-family: 'UsualBold', sans-serif;
     font-size: 1.75rem; 
     text-decoration: none; 
 `

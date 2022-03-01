@@ -50,7 +50,7 @@ export const TopLine = styled.p`
     font-size: 30px; 
     position: relative;
     line-height: 16px; 
-    font-weight: 700; 
+    font-family: 'UsualBold', sans-serif; 
     letter-spacing: 1.4px; 
     text-transform: uppercase;
     @media screen and (max-width: 768px){

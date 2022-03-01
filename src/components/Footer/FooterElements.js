@@ -98,7 +98,7 @@ export const SocialLogo = styled.p`
     display: flex; 
     align-items: center;
     margin-bottom: 16px; 
-    font-weight: bold; 
+    font-family: 'UsualBold', sans-serif;
 `
 
 export const WebsiteRights = styled.small`

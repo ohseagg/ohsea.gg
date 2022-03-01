@@ -104,7 +104,7 @@
 
 .large-header {
     color: colors.$color-white;
-    font-weight: 700;
+    font-family: 'UsualBold', sans-serif;
     font-size: 4rem;
     line-height: 0.95em;
     margin-top: 0;
@@ -112,7 +112,7 @@
 
 .medium-header {
     color: colors.$color-white;
-    font-weight: 700;
+    font-family: 'UsualBold', sans-serif;
     font-size: 2.25rem;
     line-height: 0.95em;
     margin-top: 0;
@@ -192,7 +192,7 @@
         }
     }
     .red-text {
-        font-weight: 700;
+        font-family: 'UsualMedium', sans-serif;
         display: flex;
         text-decoration: none; 
         @media screen and (min-width: 1001px) {
@@ -271,11 +271,11 @@
         }
         .event-header {
             color: colors.$color-bg;
-            font-weight: 700;
+            font-family: 'UsualBold', sans-serif;
             font-size: 2rem;
         }
         .event-prize {
-            font-weight: 700;
+            font-family: 'UsualMedium', sans-serif;
             color: colors.$color-red;
             font-size: 1.35rem;
             margin-bottom: 0.9em;
@@ -431,7 +431,7 @@
     }
     .header {
         color: colors.$color-bg;
-        font-weight: 700;
+        font-family: 'UsualBold', sans-serif;
         font-size: 2rem;
         margin-bottom: 1.25em;
     }
@@ -447,7 +447,7 @@
     .red-text {
         font-size: 1.15rem;
         text-decoration: none;
-        font-weight: 700;
+        font-family: 'UsualMedium', sans-serif;
         display: flex;
         align-items: center;
         &:hover{

@@ -5,6 +5,8 @@ export const InfoContainer = styled.div`
     color: #fff;
     background: white;
     margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
     @media screen and (max-width: 768px){
         padding: 100px 0; 
     }
@@ -12,11 +14,11 @@ export const InfoContainer = styled.div`
 
 export const InfoRow = styled.div`
     display: grid;
-    margin-left: 50px;
     grid-auto-columns: minmax(auto, 1fr); 
     align-items: center;
     grid-template-areas: "col1 col2" ;
-
+    width: 1250px;
+    max-width: 90%;
 
     @media screen and (max-width: 768px) {
         grid-template-areas: 'col1' 'col2';
@@ -24,7 +26,6 @@ export const InfoRow = styled.div`
 `
 
 export const Column1 = styled.div`
-    padding-left: 10rem;
     grid-area: col1; 
     
 `

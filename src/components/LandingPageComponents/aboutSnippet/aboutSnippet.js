@@ -1,9 +1,9 @@
 import React from 'react'
-import {InfoContainer, Buttonfill, InfoRow, Column1, Column2, TextWrapper, TopLine, Subtitle, ImgWrap, Img, Subtitle2} from './welcomeSnippetElements.js'
+import {InfoContainer, Buttonfill, InfoRow, Column1, Column2, TextWrapper, TopLine, Subtitle, ImgWrap, Img, Subtitle2} from './aboutSnippetElements.js'
 import placeholder from '../../../images/gatsby-icon.png'
 
 
-const WelcomeSnippet = () => {
+const AboutSnippet = () => {
   return (
       <InfoContainer>
         <InfoRow>
@@ -31,4 +31,4 @@ const WelcomeSnippet = () => {
   )
 }
 
-export default WelcomeSnippet
+export default AboutSnippet

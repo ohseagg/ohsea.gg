@@ -11,7 +11,7 @@
     position: absolute;
     top: -50px;
     left: 0;
-    width: 200%;
+    width: 100%;
     background: colors.$color-bg;
     transform: skew(0deg, 3deg);
     transform-origin:top;
@@ -105,7 +105,7 @@
 .large-header {
     color: colors.$color-white;
     font-family: 'UsualBold', sans-serif;
-    font-size: 3.25rem;
+    font-size: 4rem;
     line-height: 0.95em;
     margin-top: 0;
 }
@@ -120,7 +120,7 @@
 
 .subtitle {
     color: colors.$color-white;
-    font-family: 'UsualRegular', sans-serif;
+    font-weight: 300;
     font-size: 1.3rem;
     margin-top: 15px;
     line-height: 1.5em;
@@ -272,18 +272,18 @@
         .event-header {
             color: colors.$color-bg;
             font-family: 'UsualBold', sans-serif;
-            font-size: 1.85rem;
+            font-size: 2rem;
         }
         .event-prize {
             font-family: 'UsualMedium', sans-serif;
             color: colors.$color-red;
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             margin-bottom: 0.9em;
         }
         .event-details {
             font-weight: 400;
             color: colors.$color-bg;
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin-bottom: 0.3em;
         }
     

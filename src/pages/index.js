@@ -44,7 +44,7 @@ const IndexPage = () => (
     {/* <AboutSnippet/> */}
 
     <div className="text-section">
-      <div className="section">
+      <div className="section top-sect">
         <div className="header">Join Our Community</div>
         <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
         <div className="link-container">

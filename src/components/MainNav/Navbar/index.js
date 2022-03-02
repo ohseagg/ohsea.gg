@@ -6,7 +6,6 @@ import "../../../styles/style.scss"
 const Navbar = ({toggle}) => {
     return (
         <Nav>
-            <div className="bg-ellipse"></div>
             <NavbarContainer>
                 <NavBrand>
                     <NavImg to='/'>

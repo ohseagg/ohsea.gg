@@ -12,11 +12,11 @@
     top: -50px;
     left: 0;
     width: 200%;
-    background: rgb(19,44,78);
-    background: -moz-linear-gradient(194deg, rgba(19,44,78,1) 0%, rgba(11,16,23,1) 53%);
-    background: -webkit-linear-gradient(194deg, rgba(19,44,78,1) 0%, rgba(11,16,23,1) 53%);
-    background: linear-gradient(194deg, rgba(19,44,78,1) 0%, rgba(11,16,23,1) 53%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#132c4e",endColorstr="#0b1017",GradientType=1);
+    background: rgb(11,16,23);
+    background: -moz-linear-gradient(6deg, rgba(11,16,23,1) 45%, rgba(29,53,87,1) 100%);
+    background: -webkit-linear-gradient(6deg, rgba(11,16,23,1) 45%, rgba(29,53,87,1) 100%);
+    background: linear-gradient(6deg, rgba(11,16,23,1) 45%, rgba(29,53,87,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b1017",endColorstr="#1d3557",GradientType=1);
     transform: skew(0deg, 3deg);
     transform-origin:top;
     z-index: -1;

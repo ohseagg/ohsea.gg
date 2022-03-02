@@ -12,7 +12,11 @@
     top: -50px;
     left: 0;
     width: 200%;
-    background: colors.$color-bg;
+    background: rgb(19,44,78);
+    background: -moz-linear-gradient(194deg, rgba(19,44,78,1) 0%, rgba(11,16,23,1) 53%);
+    background: -webkit-linear-gradient(194deg, rgba(19,44,78,1) 0%, rgba(11,16,23,1) 53%);
+    background: linear-gradient(194deg, rgba(19,44,78,1) 0%, rgba(11,16,23,1) 53%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#132c4e",endColorstr="#0b1017",GradientType=1);
     transform: skew(0deg, 3deg);
     transform-origin:top;
     z-index: -1;
@@ -73,7 +77,7 @@
     }
     h3 {
         @media screen and (max-width: 685px) {
-            font-size: 3.2vw;
+            font-size: 2.6vw;
         }
         @media screen and (max-width: 520px) {
             font-size: 0.9rem;
@@ -87,41 +91,39 @@
     }
 }
 
-.bg-ellipse {
-    position: absolute;
-    right: 0;
-    transform: translate(30%, -200px);
-    background-color: colors.$color-blue2;
-    border-radius: 50%;
-    height: 400px;
-    width: 80%;
-    opacity: 60%;
-    filter: blur(200px);
-    @media screen and (max-width: 685px) {
-        transform: translate(10%, -200px);
-    }
-}
-
 .large-header {
     color: colors.$color-white;
     font-family: 'UsualBold', sans-serif;
     font-size: 3.25rem;
-    line-height: 0.95em;
+    line-height: 1.05em;
     margin-top: 0;
 }
 
 .medium-header {
     color: colors.$color-white;
     font-family: 'UsualBold', sans-serif;
-    font-size: 2.25rem;
+    font-size: 1.8rem;
     line-height: 0.95em;
     margin-top: 0;
+    margin-bottom: 40px;
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width: 750px) {
+        font-size: 5.4vw;
+    }
+    @media screen and (max-width: 685px) {
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 445px) {
+        font-size: 22px;
+    }
 }
 
 .subtitle {
     color: colors.$color-white;
     font-family: 'UsualRegular', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin-top: 15px;
     line-height: 1.5em;
 }
@@ -158,7 +160,7 @@
 }
 
 .events-section {
-    margin-bottom: 200px;
+    margin-bottom: 170px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -169,6 +171,7 @@
         justify-content: center;
     }
     @media screen and (max-width: 1000px) {
+        margin-bottom: 160px;
         .events {
             flex-direction: column;
         }
@@ -176,20 +179,11 @@
             display: none;
         }
     }
-    .medium-header {
-        margin-bottom: 40px;
-        @media screen and (max-width: 1000px) {
-            margin-bottom: 10px;
-        }
-        @media screen and (max-width: 750px) {
-            font-size: 5.4vw;
-        }
-        @media screen and (max-width: 685px) {
-            margin-bottom: 0;
-        }
-        @media screen and (max-width: 445px) {
-            font-size: 22px;
-        }
+    @media screen and (max-width: 750px) {
+        margin-bottom: 120px;
+    }
+    @media screen and (max-width: 445px) {
+        margin-bottom: 100px;
     }
     .red-text {
         font-family: 'UsualMedium', sans-serif;
@@ -385,7 +379,7 @@
     justify-content: space-between;
     max-width: 90%;
     width: 1250px;
-    margin: 0px auto 300px auto;
+    margin: 0px auto 290px auto;
 
     @media screen and (max-width: 770px) {
         flex-direction: column;
@@ -400,23 +394,22 @@
         padding-right: 20px;
         @media screen and (max-width: 770px) {
             width: 100%;
+            padding-right: 0px;
         }
     }
-    .header {
+    .medium-header {
         color: colors.$color-bg;
-        font-family: 'UsualBold', sans-serif;
-        font-size: 2rem;
-        line-height: 1.2em;
-        margin-bottom: 1.25em;
-        @media screen and (max-width: 750px) {
-            font-size: 5.4vw;
+        line-height: 1.3em;
+        @media screen and (max-width: 770px) {
+            font-size: 4vw;
+            margin-bottom: 1em;
         }
-        @media screen and (max-width: 445px) {
+        @media screen and (max-width: 550px) {
             font-size: 22px;
         }
     }
     .text {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         line-height: 1.6em;
         color: colors.$color-bg;
         margin-bottom: 1.5em;
@@ -425,7 +418,7 @@
         display: inline-block;
     }
     .red-text {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         text-decoration: none;
         font-family: 'UsualMedium', sans-serif;
         display: flex;
@@ -445,32 +438,68 @@
 
 .dark-bg-container-2 {
     position: relative;
-    margin-bottom: 1000px;
     display: flex;
     justify-content: center;
 
     .dark-bg::before {
-        height: 800px;
+        height: 850px;
     }
 }
 
-.about-snippet-container {
-    margin-top: 80px;
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 800px;
+}
+
+.about-container {
     width: 1250px;
     max-width: 90%;
+    display: flex;
+    flex-direction: column;
+
     .medium-header {
-        margin-bottom: 40px;
-        @media screen and (max-width: 1000px) {
-            margin-bottom: 10px;
+        margin-bottom: 2em;
+        align-self: center;
+    }
+    .subtitle {
+        font-family: 'UsualMedium', sans-serif;
+        font-size: 1.15rem;
+        line-height: 1.6em;
+        color: colors.$color-white;
+        margin-bottom: 0.9em;
+    }
+    .text-wrapper {
+        width: 47%;
+        align-self: flex-start;
+        margin-right: 6%;
+    }
+    .text {
+        font-family: 'UsualLight', sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.6em;
+        color: colors.$color-white;
+        margin-bottom: 2.5em;
+    }
+    .link-container {
+        display: inline-block;
+        .red-text {
+            font-size: 1.05rem;
+            text-decoration: none;
+            font-family: 'UsualMedium', sans-serif;
+            display: flex;
+            align-items: center;
+            &:hover{
+                transition: all 0.1s ease-in-out; 
+                .chevron-link {
+                    margin-left: 9px;
+                }
+            }
         }
-        @media screen and (max-width: 750px) {
-            font-size: 5.4vw;
-        }
-        @media screen and (max-width: 685px) {
-            margin-bottom: 0;
-        }
-        @media screen and (max-width: 445px) {
-            font-size: 22px;
+        .chevron-link {
+            transition: all 0.1s ease-in-out; 
+            margin-left: 5px;
         }
     }
 }

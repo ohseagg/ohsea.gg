@@ -3,7 +3,7 @@ import {colors} from '../../../globals/colors'
 import {Link} from 'gatsby' // changed to gatsby links  for now as react-router-dom conflicts the build 
 
 export const Nav = styled.nav`
-    background: ${colors.background};
+    background: 'transparent';
     height: 80px;
     margin-top: 10px; 
     display: flex; 

@@ -25,6 +25,11 @@
     @media screen and (max-width: 685px) {
         // height:1000px;
         height: calc(570px + 50vw );
+        background: rgb(11,16,23);
+        background: -moz-linear-gradient(6deg, rgba(11,16,23,1) 49%, rgba(22,40,65,1) 100%);
+        background: -webkit-linear-gradient(6deg, rgba(11,16,23,1) 49%, rgba(22,40,65,1) 100%);
+        background: linear-gradient(6deg, rgba(11,16,23,1) 49%, rgba(22,40,65,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b1017",endColorstr="#162841",GradientType=1);
     }
 }
 
@@ -532,15 +537,15 @@
     justify-content: center;
 
     .dark-bg::before {
-        height: 850px;
+        height: 900px;
     }
 }
 
 .about-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 800px;
+    margin-top: 30px;
+    margin-bottom: 150px;
 }
 
 .about-container {

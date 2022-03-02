@@ -3,7 +3,7 @@ import {colors} from '../../globals/colors'
 import {Link} from 'gatsby'
 
 export const FooterContainer = styled.footer`
-    background-color: black;
+    background-color: ${colors.background};
 `
 
 export const FooterWrapper = styled.div`

@@ -68,15 +68,15 @@
     }
     h1, span {
         @media screen and (max-width: 750px) {
-            font-size: 9.6vw;
+            font-size: 7.65vw;
         }
     }
     h3 {
         @media screen and (max-width: 685px) {
-            font-size: 3.4vw;
+            font-size: 3.2vw;
         }
         @media screen and (max-width: 520px) {
-            font-size: 18px;
+            font-size: 0.9rem;
         }
     }
     div {
@@ -188,7 +188,7 @@
             margin-bottom: 0;
         }
         @media screen and (max-width: 445px) {
-            font-size: 24px;
+            font-size: 22px;
         }
     }
     .red-text {
@@ -212,7 +212,7 @@
         pointer-events: none;
         user-select: none;
         .game-img {
-            height: 275px;
+            height: 260px;
             width: auto;
             margin: 0;
             @media screen and (max-width: 1407px) {
@@ -221,74 +221,126 @@
             @media screen and (max-width: 1000px) {
                 height: 28vw;
             }
+            @media screen and (max-width: 800px) {
+                height: 225px;
+            }
+            @media screen and (max-width: 720px) {
+                height: 31vw;
+            }
         }
-        @media screen and (max-width: 1300px) {
+        @media screen and (max-width: 1100px) {
             display: none;
         }
         @media screen and (max-width: 1000px) {
             display: block;
         }
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 500px) {
             display: none;
         }
     }
     .l-event-container {
         width: 600px;
-        height: 350px;
         border-radius: 50px;
         background-color: #ffffffda;
         border: 2px solid colors.$color-grey;
         backdrop-filter: blur(15px);
         margin: 0px 25px;
-        padding: 40px 40px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     
         @media screen and (max-width: 1407px) {
             width: 42.65vw;
-            height: calc(165px + 13vw);
             margin: 0px 1.8vw;
         }
         @media screen and (max-width: 1000px) {
             width: 72vw;
-            height: calc(90px + 25vw);
             margin-top: 3vw;
         }
-        @media screen and (max-width: 520px) {
+        @media screen and (max-width: 640px) {
             border-radius: 40px;
+            padding: 30px;
         }
         .event-name-container {
             display: flex;
             align-items: center;
-            margin-bottom: 1.3em;
+            margin-bottom: 1.5em;
+            @media screen and (max-width: 640px) {
+                margin-bottom: 1.2em;
+            }
+            @media screen and (max-width: 445px) {
+                margin-bottom: 0.9em;
+            }
         }
         .game-logo {
             width: 32px;
             height: 32px;
             margin-top: 0;
             margin-right: 0.9em;
+            @media screen and (max-width: 640px) {
+                display: none;
+            }
         }
         .event-header {
             color: colors.$color-bg;
             font-family: 'UsualBold', sans-serif;
             font-size: 1.85rem;
+            line-height: 1em;
+            @media screen and (max-width: 1200px) and (min-width: 1001px) {
+                font-size: 1.7rem;
+            }
+            @media screen and (max-width: 640px) {
+                font-size: 1.6rem;
+            }
+            @media screen and (max-width: 445px) {
+                font-size: 1.4rem;
+            }
         }
         .event-prize {
             font-family: 'UsualMedium', sans-serif;
             color: colors.$color-red;
             font-size: 1.25rem;
             margin-bottom: 0.9em;
+            @media screen and (max-width: 1200px) and (min-width: 1001px) {
+                font-size: 1.1rem;
+            }
+            @media screen and (max-width: 640px) {
+                font-size: 1.1rem;
+            }
+            @media screen and (max-width: 445px) {
+                font-size: 1rem;
+                margin-bottom: 0.6em;
+            }
         }
         .event-details {
             font-weight: 400;
             color: colors.$color-bg;
             font-size: 0.9rem;
             margin-bottom: 0.3em;
+            @media screen and (max-width: 640px) {
+                font-size: 0.8rem;
+            }
+            @media screen and (max-width: 445px) {
+                font-size: 0.75rem;
+                margin-bottom: 0.1em;
+            }
         }
     
         .btn-fill {
+            // margin-top: 15px;
+            // border-radius: 10px;
+            // padding: 8px 22px 8px 22px; 
+            // display: flex;
+            // align-items: center;
+            // font-size: 0.9rem; 
+
             display: inline-block;
+            @media screen and (max-width: 640px) {
+                font-size: 0.8rem;
+                padding: 6px 18px 6px 18px;
+                font-size: 0.8rem;
+            }
             &:hover{
                 box-shadow: 0px 4px 12px -2px colors.$color-red;
             }
@@ -335,15 +387,33 @@
     width: 1250px;
     margin: 0px auto 300px auto;
 
+    @media screen and (max-width: 770px) {
+        flex-direction: column;
+        align-items: center;
+        .top-sect {
+            margin-bottom: 80px;
+        }
+    }
+
     .section {
         width: 47%;
         padding-right: 20px;
+        @media screen and (max-width: 770px) {
+            width: 100%;
+        }
     }
     .header {
         color: colors.$color-bg;
         font-family: 'UsualBold', sans-serif;
         font-size: 2rem;
+        line-height: 1.2em;
         margin-bottom: 1.25em;
+        @media screen and (max-width: 750px) {
+            font-size: 5.4vw;
+        }
+        @media screen and (max-width: 445px) {
+            font-size: 22px;
+        }
     }
     .text {
         font-size: 1.15rem;
@@ -400,7 +470,7 @@
             margin-bottom: 0;
         }
         @media screen and (max-width: 445px) {
-            font-size: 24px;
+            font-size: 22px;
         }
     }
 }

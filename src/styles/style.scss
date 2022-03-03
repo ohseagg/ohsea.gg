@@ -1,10 +1,5 @@
 @use '../globals/colors' as colors;
 
-.index-layout {
-    html {
-        background-color: colors.$color-white;
-    }
-}
 
 .dark-bg::before {
     content: "";
@@ -31,6 +26,10 @@
         background: linear-gradient(6deg, rgba(11,16,23,1) 49%, rgba(22,40,65,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b1017",endColorstr="#162841",GradientType=1);
     }
+}
+
+.nav-logo {
+    pointer-events: none;
 }
 
 .hero-section {
@@ -277,6 +276,7 @@
             height: 32px;
             margin-top: 0;
             margin-right: 0.9em;
+            pointer-events: none;
             @media screen and (max-width: 640px) {
                 display: none;
             }
@@ -447,7 +447,7 @@
     justify-content: center;
 
     .dark-bg::before {
-        height: 900px;
+        height: 930px;
     }
 }
 

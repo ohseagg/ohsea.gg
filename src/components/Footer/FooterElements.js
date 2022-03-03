@@ -14,7 +14,11 @@ export const FooterWrapper = styled.div`
     align-items: center;
     max-width: 90%;
     width: 1250px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    @media screen and (max-width: 600px){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 `
 
 export const FooterLinksContainer = styled.div`
@@ -42,10 +46,8 @@ export const FooterLinkItems = styled.div`
     box-sizing: border-box;
     color: ${colors.white}; 
 
-    @media screen and (max-width: 420px){
-        margin: 0;
-        padding: 10px;
-        width: 100%;
+    @media screen and (max-width: 600px){
+        align-items: center;
     }
 `
 
@@ -74,8 +76,10 @@ export const SocialMediaWrap = styled.div`
     max-width: 90%;
     flex-direction: column;
 
-    @media (max-width: 820px){
-
+    @media (max-width: 600px){
+        width: auto;
+        margin-top: 60px;
+        margin-bottom: 20px;
     }
 `
 

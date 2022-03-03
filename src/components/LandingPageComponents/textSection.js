@@ -19,9 +19,9 @@ const TextSection = () => {
             <div className="medium-header">Bring Esports To Your School</div>
             <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
             <div className="link-container">
-            <Link to="/" className="red-text" >
+            <a href="https://www.instagram.com/ohseagg/?hl=en" target="_blank" className="red-text">
                 Contact Us <GoChevronRight className="chevron-link"/>
-            </Link>
+            </a>
             </div>
         </div>
         </div>

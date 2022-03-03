@@ -27,6 +27,9 @@ const AboutSnippet = () => {
                     </Link>
                     </div>
                 </div>
+                <div className="display-img">
+
+                </div>
             </div>
         </div>
     )

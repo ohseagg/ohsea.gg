@@ -1,67 +1,81 @@
 import React from 'react'
+import { Link } from "gatsby"
 import styled from "styled-components"
 import {colors} from '../../globals/colors.js'
 
 
 const FinalReminder = () => {
   return (
-    <Container>
-        <Header>So what are you waiting for? <Subtitle>OHSEA is comitted to bringing Esports to High School Students and demonstrating an industry full of potential.</Subtitle></Header>
-        
-        <BtnDiv>
-            <BtnLogIn>Log in</BtnLogIn>
-            <BtnSignIn>Sign in</BtnSignIn>
-        </BtnDiv>
+      <Wrapper>
+        <Container>
+            <Header>Let's Create Ontario's Future In Esports.
+                <Subtitle>
+                    OHSEA is comitted to bringing Esports to High School Students and demonstrating an industry full of potential.
+                </Subtitle>
+            </Header>
+            
+            <BtnFill>Get Started</BtnFill>
 
-    </Container>
+        </Container>
+      </Wrapper>
   )
 }
-const Container = styled.div`
-    background: ${colors.white}; 
-    display: block;
+const Wrapper = styled.div`
+    display: flex;
     justify-content: center;
-    height: 400px;
-    @media screen and (max-width: 768px){
-        padding: 100px 0; 
-    }
+    background: ${colors.white}; 
+
+`
+const Container = styled.div`
+    width: 1250px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 `
 const Header = styled.h1`
-    height: 100px;
     text-align: center;
-    position: relative;
-    top: 100px;
-    color: black; 
-    font-size: 30px; 
+    margin-top: 100px;
+    color: ${colors.background}; 
     font-family: 'UsualBold', sans-serif; 
+
+    font-size: 1.8rem;
+    line-height: 1.2em;
+    @media screen and (max-width: 1000px) {
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width: 750px) {
+        font-size: 5.4vw;
+    }
+    @media screen and (max-width: 685px) {
+        margin-bottom: 0;
+    }
+    @media screen and (max-width: 445px) {
+        font-size: 22px;
+    }
 `
 
 const Subtitle = styled.h2`
-    font-size: 18px; 
-    top: 10px;
-    position: relative;
+    font-size: 1rem; 
+    line-height: 1.5em; 
+    margin-top: 30px;
     text-align: center;
-    color: black; 
-    font-family: 'UsualBold', sans-serif; 
-`
-const BtnDiv = styled.div`
-    margin-top: 7rem;
-    height: 100px;
-    display: flex;
+    color: ${colors.background}; 
+    font-family: 'UsualMedium', sans-serif; 
 `
 
-const BtnSignIn = styled.div`
+const BtnFill = styled.div`
     justify-self: center;
-    margin: auto;   
-    right: 15rem;
     position: relative;
     border-radius: 10px;
-    padding: 7px 26px 7px 26px; 
-    display: inline;
-    width: 6rem;
+    padding: 9px 24px; 
+    margin-bottom: 100px;
     font-size: 0.9rem; 
     outline: none;
     cursor: pointer; 
     text-decoration: none; 
+    text-align: center;
     transition: all 0.2s ease-in-out;
     background: ${colors.red};
     color: ${colors.white}; 
@@ -71,29 +85,9 @@ const BtnSignIn = styled.div`
         transition: all 0.2s ease-in-out; 
         box-shadow: 0px 4px 17px -2px ${colors.red};
     }
-`
-
-const BtnLogIn = styled.div`
-    justify-self: center;
-    margin: auto;
-    left: 15rem;
-    position: relative;
-    border-radius: 10px;
-    padding: 7px 26px 7px 26px; 
-    display: inline;
-    width: 6rem;
-    font-size: 0.9rem;
-    outline: none;
-    cursor: pointer; 
-    text-decoration: none; 
-    transition: all 0.2s ease-in-out;
-    background: ${colors.red};
-    color: ${colors.white}; 
-    box-shadow: none;
-    border: none; 
-    &:hover{
-        transition: all 0.2s ease-in-out; 
-        box-shadow: 0px 4px 17px -2px ${colors.red};
+    @media screen and (max-width: 640px) {
+        font-size: 0.8rem;
+        padding: 6px 18px 6px 18px;
     }
 `
 

@@ -451,6 +451,9 @@
 }
 
 .filter-btn {
+    @media screen and (min-width: 561px) {
+        display: none;
+    }
     @media screen and (max-width: 1250px) {
         width: 42.5vw;
         height: 210px;

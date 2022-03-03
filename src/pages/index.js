@@ -10,6 +10,7 @@ import LargeEvent from "../components/LandingPageComponents/largeEvent"
 //import SmallEvent from "../components/LandingPageComponents/smallEvent"
 import TextSection from "../components/LandingPageComponents/textSection"
 import AboutSnippet from "../components/LandingPageComponents/aboutSnippet";
+import FinalReminder from "../components/LandingPageComponents/finalReminder"
 
 import data from "../data/landingEventData"
 import  "../styles/style.scss"
@@ -48,6 +49,10 @@ const IndexPage = () => (
     </div>
 
     <AboutSnippet />
+
+
+    <FinalReminder/>
+
     {/* <div className="about-wrapper">
       <div className="about-container">
         <div className="medium-header"><span className="red-text">Esports</span> In High School</div>
@@ -72,6 +77,8 @@ const IndexPage = () => (
         </div>
       </div>
     </div> */}
+
+    
     
   </Layout>
 )

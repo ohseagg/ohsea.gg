@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {colors} from '../../../globals/colors'
 import {Link} from 'gatsby' // changed to gatsby links  for now as react-router-dom conflicts the build 
+import {FaBars} from "react-icons/fa";
 
 export const Nav = styled.nav`
     background: 'transparent';
@@ -45,6 +46,15 @@ export const NavLogo = styled(Link)`
     font-family: 'UsualBold', sans-serif;
     font-size: 1.75rem; 
     text-decoration: none; 
+    @media screen and (max-width: 400px) {
+        font-size: 1.55rem; 
+    }
+`
+
+export const NavMenuWrapper = styled.div`
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `
 
 export const NavMenu = styled.ul`
@@ -93,13 +103,19 @@ export const MobileIcon = styled.div`
     display: none; 
 
     @media screen and (max-width: 768px){
-        display: block; 
-        position: absolute; 
-        top: 0; 
-        right: 0;
-        transform: translate(-100%, 60%); 
+        display: flex;
+        height: 100%; 
+        align-items: center;
         font-size: 1.8rem; 
         cursor: pointer; 
+    }
+`
+
+export const BarIcon = styled(FaBars)`
+    color: ${colors.white};
+    @media screen and (max-width: 500px) {
+        height: 25px;
+        width: 25px;
     }
 `
 

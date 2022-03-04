@@ -1,6 +1,5 @@
 import React from 'react'
-import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
-import {FaBars} from "react-icons/fa";
+import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, BarIcon, NavMenu, NavMenuWrapper, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
 import "../../../styles/style.scss"
 
 const Navbar = ({toggle}) => {
@@ -14,13 +13,13 @@ const Navbar = ({toggle}) => {
                     <NavLogo to='/'>OHSEA</NavLogo>
                 </NavBrand>
                 <MobileIcon onClick = {toggle}>
-                    <FaBars style ={{color: 'white'}}/>
+                    <BarIcon/>
                 </MobileIcon>
-                <div>
+                <NavMenuWrapper>
                     <NavMenu>
                         <NavItem>
                             <NavLinks to='/events' activeStyle>
-                                Events & Leagues
+                                Events
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -38,7 +37,7 @@ const Navbar = ({toggle}) => {
                             <NavBtnLink to='/'>Log In</NavBtnLink>
                         </NavBtn>
                     </NavMenu>
-                </div>
+                </NavMenuWrapper>
             </NavbarContainer>
         </Nav>
     )

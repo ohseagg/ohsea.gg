@@ -10,10 +10,9 @@ const Sidebar = ({isOpen, toggle}) => {
 
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink> About Us </SidebarLink>
-                    <SidebarLink> About Us </SidebarLink>
-                    <SidebarLink> About Us </SidebarLink>
-                    <SidebarLink> About Us </SidebarLink>
+                    <SidebarLink>Events</SidebarLink>
+                    <SidebarLink>About Us</SidebarLink>
+                    <SidebarLink>Discord</SidebarLink>
                 </SidebarMenu>
 
                 <SideBtnWrap>

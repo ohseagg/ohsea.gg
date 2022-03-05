@@ -216,6 +216,7 @@
 
 .l-event-wrapper {
     position: relative;
+    margin-bottom: 30px;
 
     .game-img-wrapper {
         position: absolute;
@@ -406,7 +407,7 @@
     }
     h1, red-text {
         @media screen and (max-width: 750px) {
-            font-size: 9.6vw;
+            font-size: 7.7vw;
         }
     }
 }
@@ -414,6 +415,7 @@
 .filter-options {
     display: flex;
     justify-content: center;
+    margin-bottom: 150px;
     @media screen and (max-width: 560px) {
         display: none;
     }
@@ -456,16 +458,6 @@
 .filter-btn {
     @media screen and (min-width: 561px) {
         display: none;
-    }
-    @media screen and (max-width: 1250px) {
-        width: 42.5vw;
-        height: 210px;
-        margin: 1.5vw;
-    }
-    @media screen and (max-width: 1000px) {
-        width: 35vw;
-        height: 230px;
-        margin: 1.5vw;
     }
 }
 

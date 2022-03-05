@@ -23,11 +23,11 @@ class GameSelect extends Component {
                 );
             case 1:
                 return (
-                    <>League</>
+                    <>Valorant</>
                 );
             case 2:
                 return (
-                    <>Valorant</>
+                    <>League</>
                 );
         }
     }

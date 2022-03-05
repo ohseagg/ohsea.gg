@@ -46,6 +46,7 @@ class PrizeSlider extends Component {
                                 fontSize: 12,
                                 fontWeight: 700,
                                 background: 'unset',
+                                userSelect: 'none',
                                 padding: 0,
                                 width: 30,
                                 height: 30,

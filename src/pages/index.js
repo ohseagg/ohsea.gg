@@ -23,8 +23,8 @@ const IndexPage = () => (
       <div className="events-section">
         <div className="medium-header">Upcoming Events</div>
         <div className="events">
-          <LargeEvent data={data.LgEvent1}/>
-          <LargeEvent data={data.LgEvent2}/>
+          <LargeEvent data={data.LgEvent1} filter={0}/>
+          <LargeEvent data={data.LgEvent2} filter={0}/>
         </div>
         {/* 
         components below are for smaller (monthly random games , etc.) events

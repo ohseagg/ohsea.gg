@@ -49,37 +49,40 @@ class EventsPage extends React.Component {
                                 displayGame={this.state.display}
                                 />
                             </div>
+                            {/* 
+                            no need for this filter option rn
                             <div className="slider-content">
                                 <h3>Prize Pool</h3>
                                 <PrizeSlider />
-                            </div>
+                            </div> */}
                         </div>
-                        <div className="btn-fill filter-btn">
+                        {/* <div className="btn-fill filter-btn">
                             Filters
-                        </div>
-
-                        <div className="events-section">
-                            <div className="events">
-                                <LargeEvent data={data.LgEvent1} filter={this.state.display}/>
-                                <LargeEvent data={data.LgEvent2} filter={this.state.display}/>
-                            </div>
-                            {/* 
-                            components below are for smaller (monthly random games , etc.) events
-                            - not needed right now
-                            */}
-                            {/* <div className="events s-events">
-                            <SmallEvent/>
-                            <SmallEvent/>
-                            <div className="last-s-event">
-                                <SmallEvent/>
-                            </div>
-                            </div>
-                            <Link to="/" className="subtitle red-text" >
-                            See More <GoChevronRight className="chevron-link"/>
-                            </Link> */}
-                        </div>
-
+                        </div> */}
                     </div>
+
+                    <div className="events-section">
+                        <div className="events">
+                            <LargeEvent data={data.LgEvent1} filter={this.state.display}/>
+                            <LargeEvent data={data.LgEvent2} filter={this.state.display}/>
+                        </div>
+                        {/* 
+                        components below are for smaller (monthly random games , etc.) events
+                        - not needed right now
+                        */}
+                        {/* <div className="events s-events">
+                        <SmallEvent/>
+                        <SmallEvent/>
+                        <div className="last-s-event">
+                            <SmallEvent/>
+                        </div>
+                        </div>
+                        <Link to="/" className="subtitle red-text" >
+                        See More <GoChevronRight className="chevron-link"/>
+                        </Link> */}
+                    </div>
+
+                    
                 </div>
             </Layout>
         );

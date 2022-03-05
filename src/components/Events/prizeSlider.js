@@ -39,7 +39,6 @@ class PrizeSlider extends Component {
                         onChange={handleChange}
                         valueLabelDisplay="auto"
                         color="primary"
-                        valueLabelDisplay="on"
                         sx={{
                             '& .MuiSlider-valueLabel': {
                                 lineHeight: 1.2,

@@ -46,6 +46,7 @@ export const NavLogo = styled(Link)`
     font-family: 'UsualBold', sans-serif;
     font-size: 1.75rem; 
     text-decoration: none; 
+    user-select: none;
     @media screen and (max-width: 400px) {
         font-size: 1.55rem; 
     }

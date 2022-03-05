@@ -9,6 +9,7 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
   overflow-x: hidden;
+  position: relative;
 }
 body {
   margin: 0;
@@ -23,6 +24,8 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  overflow-x: hidden;
+  position: relative;
 }
 article,
 aside,

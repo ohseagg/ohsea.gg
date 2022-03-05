@@ -30,6 +30,7 @@
 
 .nav-logo {
     pointer-events: none;
+    user-select: none;
     @media screen and (max-width: 500px) {
         width: auto;
         height: 30px;

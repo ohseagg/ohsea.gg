@@ -27,14 +27,11 @@ const Navbar = ({toggle}) => {
                                 About 
                             </NavLinks>
                         </NavItem>
-                        <NavItem>
-                            {/* just open discord invite link*/}
-                            <NavLinks to='https://discord.gg/DB2zUppwSa'>
-                                Discord
-                            </NavLinks>
-                        </NavItem>
                         <NavBtn> 
-                            <NavBtnLink to='/'>Log In</NavBtnLink>
+                            <NavBtnLink 
+                            href='https://discord.gg/DB2zUppwSa'
+                            target='_blank'
+                            >Discord</NavBtnLink>
                         </NavBtn>
                     </NavMenu>
                 </NavMenuWrapper>

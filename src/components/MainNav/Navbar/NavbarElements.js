@@ -129,7 +129,7 @@ export const NavBtn = styled.nav`
     }
 `
     
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled.a`
     border-radius: 10px;
     background: ${colors.red}; 
     white-space: nowrap; 

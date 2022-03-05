@@ -10,13 +10,15 @@ const Sidebar = ({isOpen, toggle}) => {
 
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink>Events</SidebarLink>
-                    <SidebarLink>About Us</SidebarLink>
-                    <SidebarLink>Discord</SidebarLink>
+                    <SidebarLink to='/events'>Events</SidebarLink>
+                    <SidebarLink to='/about'>About Us</SidebarLink>
                 </SidebarMenu>
 
                 <SideBtnWrap>
-                    <SidebarRoute>Sign In</SidebarRoute>
+                    <SidebarRoute
+                    href="https://discord.com/invite/zWc8fymdrG"
+                    target="_blank"
+                    >Discord</SidebarRoute>
                 </SideBtnWrap>
 
             </SidebarWrapper>

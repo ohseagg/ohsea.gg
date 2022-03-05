@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from "gatsby"
 import {FaTimes} from 'react-icons/fa'
 import {colors} from '../../../globals/colors'
 
@@ -44,15 +45,15 @@ export const SidebarMenu = styled.ul`
     margin: 0;
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: repeat(3, 100px); 
+    grid-template-rows: repeat(2, 100px); 
     text-align: center; 
 
     @media screen and (max-width: 480px){
-        grid-template-rows: repeat(3,80px); 
+        grid-template-rows: repeat(2,80px); 
     }
 `
 
-export const SidebarLink = styled.h1`
+export const SidebarLink = styled(Link)`
     display: flex; 
     align-items: center; 
     justify-content: center;
@@ -78,7 +79,7 @@ export const SideBtnWrap = styled.div`
     justify-content: center; 
 `
 
-export const SidebarRoute = styled.div`
+export const SidebarRoute = styled.a`
     border-radius: 15px;
     background: ${colors.red}; 
     white-space: nowrap; 
@@ -98,6 +99,6 @@ export const SidebarRoute = styled.div`
     text-decoration: none; 
     &:hover{
         transition: all 0.2s ease-in-out; 
-        box-shadow: 0px 4px 17px 0px ${colors.red};
+        box-shadow: 0px 5px 20px -3px ${colors.red};
     }
 `

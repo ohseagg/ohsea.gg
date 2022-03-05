@@ -17,7 +17,9 @@ export default function HeroSection() {
                 </div>
             </div>
             <div className="right">
-                <img src={require('../../images/TestDisplay.png').default} alt="test display img"/>
+                <div className="img-rotate">
+                    <img src={require('../../images/Display.png').default} alt="Display"/>
+                </div>
             </div>
         </div>
     )

@@ -70,7 +70,7 @@
     .right {
         margin-left: 130px;
         min-width: 1000px;
-        overflow: hidden;
+        overflow: visible;
         @media screen and (max-width: 750px) {
             display: none;
         }
@@ -80,6 +80,9 @@
             display: block;
             width: 100%;
             height: auto;
+        }
+        .img-rotate {
+            transform: rotate(3deg);
         }
     }
     h1, span {
@@ -561,6 +564,11 @@
     display: flex;
     flex-direction: column;
 
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .medium-header {
         margin-bottom: 2em;
         align-self: center;
@@ -578,10 +586,16 @@
             font-size: 1.05rem;
         }
     }
-    .display-img {
+    .display-wrapper {
+        display: flex;
+        align-items: center;
+
         @media screen and (max-width: 1000px) {
             display: none;
         }
+    }
+    .display-img {
+        height: 400px;
     }
     .text-wrapper {
         width: 47%;

@@ -77,10 +77,10 @@
         }
 
         img {
-            user-select: none;
             display: block;
             width: 100%;
             height: auto;
+
         }
         .img-rotate {
             transform: rotate(3deg);
@@ -224,7 +224,6 @@
         right: 0;
         padding: 0;
         pointer-events: none;
-        user-select: none;
         .game-img {
             height: 260px;
             width: auto;
@@ -294,7 +293,6 @@
             margin-top: 0;
             margin-right: 0.9em;
             pointer-events: none;
-            user-select: none;
         }
         .event-header {
             color: colors.$color-bg;
@@ -585,7 +583,6 @@
     }
     .display-img {
         height: 400px;
-        user-select: none;
     }
     .text-wrapper {
         width: 47%;

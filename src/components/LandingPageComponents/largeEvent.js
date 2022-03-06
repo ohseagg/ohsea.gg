@@ -74,9 +74,9 @@ function Event(props) {
         <div>
           <div className="btn-fill">See Details</div>
         </div>
-      </div>
-      <div className="game-img-wrapper">
-        <GameImg data={props.data} />
+        <div className="game-img-wrapper">
+          <GameImg data={props.data} />
+        </div>
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ export default function HeroSection() {
                     BRINGING <span className="red-text large-header">ESPORTS</span> TO HIGH SCHOOLS IN ONTARIO
                 </h1>
                 <h3 className="subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
+                    More than just a game, Esports opens pathways to STEM careers, builds soft skills, and allows students to connect with one another.
                 </h3>
                 <Link to='/events' style={{textDecoration: 'none'}}>
                     <div>

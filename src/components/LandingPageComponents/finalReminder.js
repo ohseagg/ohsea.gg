@@ -14,7 +14,9 @@ const FinalReminder = () => {
                 </Subtitle>
             </Header>
             
-            <BtnFill>Get Started</BtnFill>
+            <Link to='/events' style={{textDecoration: 'none'}}>
+                <BtnFill>Get Started</BtnFill>
+            </Link>
 
         </Container>
       </Wrapper>

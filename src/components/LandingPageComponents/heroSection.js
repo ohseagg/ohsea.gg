@@ -12,9 +12,11 @@ export default function HeroSection() {
                 <h3 className="subtitle">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore...
                 </h3>
-                <div>
-                    <div className="btn-fill">Get Started</div>
-                </div>
+                <Link to='/events' style={{textDecoration: 'none'}}>
+                    <div>
+                        <div className="btn-fill">Get Started</div>
+                    </div>
+                </Link>
             </div>
             <div className="right">
                 <div className="img-rotate">

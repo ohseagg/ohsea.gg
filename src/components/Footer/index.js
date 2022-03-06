@@ -28,16 +28,18 @@ const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                                <FooterLink>Events & Leagues</FooterLink>
-                                <FooterLink>About</FooterLink>
-                                <FooterLink>Account</FooterLink>
-                                <FooterLink>Support</FooterLink>
-                        </FooterLinkItems>
-                        <FooterLinkItems>
-                                <FooterLink>Guidelines</FooterLink>
-                                <FooterLink>Partners</FooterLink>
-                                <FooterLink>Privacy</FooterLink>
-                                <FooterLink>Terms of Use</FooterLink>
+                                <FooterLink
+                                to='/events'
+                                >Events</FooterLink>
+                                <FooterLink
+                                to='/about'
+                                >About</FooterLink>
+                                <FooterLink
+                                to='/contact'
+                                >Contact</FooterLink>
+                                <FooterLink
+                                to='/partners'
+                                >Partners</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>

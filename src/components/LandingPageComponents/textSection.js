@@ -1,6 +1,5 @@
 import React from 'react'
 import '../../styles/style.scss'
-import { Link } from "gatsby"
 import { GoChevronRight } from 'react-icons/go'
 
 const TextSection = () => {

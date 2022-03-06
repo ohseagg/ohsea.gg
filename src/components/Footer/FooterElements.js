@@ -93,6 +93,7 @@ export const FooterImg = styled(Link)`
     margin-bottom: 0.7rem;
     // margin-top 0.3rem;
     margin-right: 10px;
+    user-select: none;
 `
 
 export const SocialLogo = styled.p`
@@ -103,6 +104,8 @@ export const SocialLogo = styled.p`
     align-items: center;
     margin-bottom: 16px; 
     font-family: 'UsualBold', sans-serif;
+    user-select: none;
+
 `
 
 export const WebsiteRights = styled.small`

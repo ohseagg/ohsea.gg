@@ -695,8 +695,8 @@
 .container-contact {
     width: 1250px;
     max-width: 90%;
-    margin-top: 80px;
-    margin-bottom: 390px;
+    margin-top: 40px;
+    margin-bottom: 450px;
     display: flex;
 
     .left {
@@ -721,6 +721,7 @@
     }
 
     label {
+        margin-top: 35px;
         margin-bottom: 10px;
         padding-left: 10px;
         color: colors.$color-white;
@@ -737,19 +738,33 @@
         width: 100%;
         border-radius: 10px;
         padding: 10px;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
     }
     textarea {
         margin-bottom: 10px;
         resize: vertical;
         min-height: 100px;
         height: 150px;
-        max-height: 250px;
+        max-height: 220px;
     }
     input::placeholder, textarea::placeholder {
         font-family: 'UsualLight', sans-serif;
         color: rgba(255,255,255,0.3);
         user-select: none;
+    }
+
+    .error {
+        display: flex;
+        align-items: center;
+
+        color: colors.$color-red;
+        font-size: 0.8rem;
+        padding-left: 10px;
+        font-family: 'UsualRegular', sans-serif;
+    }
+
+    .warning-icon {
+        margin-right: 7px;
     }
 
     button {

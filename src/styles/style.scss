@@ -695,6 +695,68 @@
 .container-contact {
     width: 1250px;
     max-width: 90%;
-    margin-top: 5vh;
-    margin-bottom: 15vh
+    margin-top: 80px;
+    margin-bottom: 390px;
+    display: flex;
+
+    .left {
+        width: 45%;
+        margin-right: 10%;
+        height: 100px;
+    }
+
+    .right {
+        width: 45%;
+        height: 100px;
+    }
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .input-field {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 10px;
+        padding-left: 10px;
+        color: colors.$color-white;
+        font-size: 0.9rem;
+        font-family: 'UsualRegular', sans-serif;
+    }
+
+    input, textarea {
+        border: 1px solid rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.05);
+        color: colors.$color-white;
+        font-size: 0.9rem;
+        font-family: 'UsualRegular', sans-serif;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 35px;
+    }
+    textarea {
+        margin-bottom: 10px;
+        resize: vertical;
+        min-height: 100px;
+        height: 150px;
+        max-height: 250px;
+    }
+    input::placeholder, textarea::placeholder {
+        font-family: 'UsualLight', sans-serif;
+        color: rgba(255,255,255,0.3);
+        user-select: none;
+    }
+
+    button {
+        justify-content: center;
+
+        &:hover {
+            box-shadow: 0px 5px 18px -4px colors.$color-red;
+        }
+    }
 }

@@ -23,8 +23,13 @@ const Navbar = ({toggle}) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/' activeStyle>
+                            <NavLinks to='/about' activeStyle>
                                 About 
+                            </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='/contact' activeStyle>
+                                Contact 
                             </NavLinks>
                         </NavItem>
                         <NavBtn> 

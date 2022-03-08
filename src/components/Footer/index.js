@@ -37,9 +37,6 @@ const Footer = () => {
                                 <FooterLink
                                 to='/contact'
                                 >Contact</FooterLink>
-                                <FooterLink
-                                to='/partners'
-                                >Partners</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>

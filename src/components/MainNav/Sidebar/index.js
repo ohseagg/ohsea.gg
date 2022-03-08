@@ -12,6 +12,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 <SidebarMenu>
                     <SidebarLink to='/events'>Events</SidebarLink>
                     <SidebarLink to='/about'>About Us</SidebarLink>
+                    <SidebarLink to='/contact'>Contact</SidebarLink>
                 </SidebarMenu>
 
                 <SideBtnWrap>

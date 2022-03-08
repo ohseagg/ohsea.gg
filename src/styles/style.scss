@@ -695,19 +695,54 @@
 .container-contact {
     width: 1250px;
     max-width: 90%;
-    margin-top: 40px;
-    margin-bottom: 450px;
+    margin-top: 8vh;
+    margin-bottom: 435px;
     display: flex;
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
 
     .left {
         width: 45%;
         margin-right: 10%;
         height: 100px;
+        @media screen and (max-width: 1200px) {
+            width: 40%;
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        
+        h1 {
+            margin-top: 8vh;
+            margin-bottom: 35px;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 2.65rem;
+            }
+        }
+
+        .subtitle {
+            line-height: 1.9em;
+            font-family: 'UsualLight', sans-serif;
+            @media screen and (max-width: 1200px) {
+                font-size: 0.95rem;
+            }
+        }
     }
 
     .right {
         width: 45%;
         height: 100px;
+        @media screen and (max-width: 1200px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 768px) {
+            width: 75%;
+        }
+        @media screen and (max-width: 430px) {
+            width: 94%;
+        }
     }
 }
 
@@ -734,7 +769,7 @@
         background-color: rgba(255,255,255,0.05);
         color: colors.$color-white;
         font-size: 0.9rem;
-        font-family: 'UsualRegular', sans-serif;
+        font-family: 'UsualLight', sans-serif;
         width: 100%;
         border-radius: 10px;
         padding: 10px;
@@ -745,10 +780,10 @@
         resize: vertical;
         min-height: 100px;
         height: 150px;
-        max-height: 220px;
+        max-height: 210px;
     }
     input::placeholder, textarea::placeholder {
-        font-family: 'UsualLight', sans-serif;
+        font-family: 'UsualLightItalic', sans-serif;
         color: rgba(255,255,255,0.3);
         user-select: none;
     }

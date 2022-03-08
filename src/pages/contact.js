@@ -1,6 +1,6 @@
 import * as React from "react"
 import  { useRef } from "react"
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { Formik, Field, Form  } from 'formik'
 import { RiErrorWarningLine } from 'react-icons/ri'
 
@@ -27,6 +27,8 @@ function validateMessage(value) {
 
 class Contact extends React.Component {
     render() {
+        const form = useRef()
+
         return(
             <Layout>
                 <Seo title="Contact" />

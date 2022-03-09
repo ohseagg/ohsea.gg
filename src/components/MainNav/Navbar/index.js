@@ -1,5 +1,6 @@
 import React from 'react'
 import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, BarIcon, NavMenu, NavMenuWrapper, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
+import { colors } from "../../../globals/colors"
 import "../../../styles/style.scss"
 
 const Navbar = ({toggle}) => {
@@ -18,17 +19,17 @@ const Navbar = ({toggle}) => {
                 <NavMenuWrapper>
                     <NavMenu>
                         <NavItem>
-                            <NavLinks to='/events' activeStyle>
+                            <NavLinks to='/events' activeClassName='nav-active'>
                                 Events
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/about' activeStyle>
+                            <NavLinks to='/about' activeClassName='nav-active'>
                                 About 
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to='/contact' activeStyle>
+                            <NavLinks to='/contact' activeClassName='nav-active'>
                                 Contact 
                             </NavLinks>
                         </NavItem>

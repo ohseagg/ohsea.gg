@@ -94,9 +94,6 @@ export const NavLinks = styled(Link)`
         background-color: #ffffff11; 
         transition: all 0.1s ease-in-out; 
     }
-    &.active {
-        color: ${colors.red};
-    }
 `
 
 //mobile icon styling 

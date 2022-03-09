@@ -41,6 +41,11 @@
     }
 }
 
+.nav-active {
+    color: colors.$color-red;
+    font-family: 'UsualMedium', sans-serif;
+}
+
 .hero-section {
     margin-top: 80px;
     margin-bottom: 150px;

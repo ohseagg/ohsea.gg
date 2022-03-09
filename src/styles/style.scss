@@ -365,15 +365,15 @@
 }
 
 .bg-events:before {
-    height: 680px;
+    height: 660px;
     @media screen and (max-width: 750px) {
-        height: 620px;
+        height: 600px;
     }
     @media screen and (max-width: 685px) {
-        height: 580px;
+        height: 560px;
     }
     @media screen and (max-width: 560px) {
-        height: 500px;
+        height: 480px;
     }
 }
 
@@ -383,7 +383,7 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
-        margin-top: 125px;
+        margin-top: 100px;
         @media screen and (max-width: 750px) {
             margin-top: 90px;
         }

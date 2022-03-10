@@ -40,7 +40,7 @@ const Header = styled.h1`
     text-align: center;
     margin-top: 100px;
     color: ${colors.background}; 
-    font-family: 'UsualBold', sans-serif; 
+    font-family: 'UsualExtraBold', sans-serif; 
 
     font-size: 1.8rem;
     line-height: 1.2em;

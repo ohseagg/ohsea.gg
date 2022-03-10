@@ -114,7 +114,7 @@
 
 .large-header {
     color: colors.$color-white;
-    font-family: 'UsualBold', sans-serif;
+    font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
     line-height: 1.05em;
     margin-top: 0;
@@ -189,6 +189,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    .medium-header {
+        font-family: 'UsualExtraBold', sans-serif;
+    }
+
     .events {
         margin-top: 15px;
         display: flex;
@@ -302,16 +306,16 @@
         .event-header {
             color: colors.$color-bg;
             font-family: 'UsualBold', sans-serif;
-            font-size: 1.85rem;
+            font-size: 1.75rem;
             line-height: 1em;
             @media screen and (max-width: 1200px) and (min-width: 1001px) {
-                font-size: 1.7rem;
-            }
-            @media screen and (max-width: 640px) {
                 font-size: 1.6rem;
             }
+            @media screen and (max-width: 640px) {
+                font-size: 1.5rem;
+            }
             @media screen and (max-width: 445px) {
-                font-size: 1.4rem;
+                font-size: 1.3rem;
             }
         }
         .event-prize {
@@ -331,7 +335,6 @@
             }
         }
         .event-details {
-            font-weight: 400;
             color: colors.$color-bg;
             font-size: 0.9rem;
             margin-bottom: 0.3em;
@@ -342,6 +345,10 @@
                 font-size: 0.75rem;
                 margin-bottom: 0.1em;
             }
+        }
+
+        .detail-important {
+            font-family: 'UsualBold', sans-serif;
         }
     
         .btn-fill {
@@ -562,14 +569,16 @@
     }
 
     .medium-header {
+        font-family: 'UsualExtraBold', sans-serif;
         margin-bottom: 2em;
         align-self: center;
+
         @media screen and (max-width: 685px) {
             margin-bottom: 2.5em;
         }
     }
     .subtitle {
-        font-family: 'UsualMedium', sans-serif;
+        font-family: 'UsualBold', sans-serif;
         font-size: 1.15rem;
         line-height: 1.6em;
         color: colors.$color-white;

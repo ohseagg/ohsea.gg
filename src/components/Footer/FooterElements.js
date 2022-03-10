@@ -83,13 +83,13 @@ export const SocialMediaWrap = styled.div`
     }
 `
 
-export const Brand = styled.div`
+export const Brand = styled(Link)`
     display: flex;
     align-items: center;
     cursor: pointer;
 `
 
-export const FooterImg = styled(Link)`
+export const FooterImg = styled.div`
     margin-bottom: 0.7rem;
     // margin-top 0.3rem;
     margin-right: 10px;

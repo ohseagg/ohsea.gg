@@ -38,7 +38,7 @@ export default function Contact() {
                             Let's talk.
                         </h1>
                         <div className="subtitle">
-                            We'd love to hear from you, whether you're a student with some questions, an organization seeking a partnership, or anyone else!
+                            We'd love to hear from you, whether you're a student or educator with a question, or an organization seeking a partnership.
                         </div>
                     </div>
                     <div className="right">

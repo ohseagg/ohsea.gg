@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/style.scss'
+import { Link } from "gatsby"
 import { GoChevronRight } from 'react-icons/go'
 
 const TextSection = () => {
@@ -18,9 +19,9 @@ const TextSection = () => {
             <div className="medium-header">Bring Esports To Your School</div>
             <div className="text">Interested in starting an Esports club or implementing gaming within the classroom? We can help.</div>
             <div className="link-container">
-            <a href="https://www.instagram.com/ohseagg/?hl=en" target="_blank" className="red-text">
+            <Link to="/contact" className="red-text">
                 Contact Us <GoChevronRight className="chevron-link"/>
-            </a>
+            </Link>
             </div>
         </div>
         </div>

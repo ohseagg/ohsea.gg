@@ -61,7 +61,7 @@ function Event(props) {
           <div className="event-prize">
             {props.data ? props.data.prize : "Loading"} Prize Pool
           </div>
-          <div className="event-details">
+          <div className="event-details avgl">
             {props.data ? props.data.detail1 : "Loading"}
           </div>
           <div className="event-details">

@@ -27,18 +27,18 @@ export default {
     */
     LgEvent1: {
         game: 2,
-        title: "LoL Spring Open",
-        prize: "$225+",
+        title: "AVGL x OHSEA LoL Spring Open",
+        prize: "$300+",
         detail1: "March 14-15",
         detail2: "Double Elimination",
-        detail3: "Open to ON Highschool Students",
+        detail3: "ON High School Students",
     },
     LgEvent2: {
         game: 1,
-        title: "VALORANT Spring Open",
-        prize: "$225+",
+        title: "AVGL x OHSEA VALORANT Spring Open",
+        prize: "$300+",
         detail1: "March 16-17",
         detail2: "Double Elimination",
-        detail3: "Open to ON Highschool Students",
+        detail3: "ON High School Students",
     },
 }

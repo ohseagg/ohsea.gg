@@ -7,8 +7,8 @@ const Footer = () => {
         <FooterContainer>
             <FooterWrapper>
                 <SocialMediaWrap>
-                    <Brand>
-                        <FooterImg to='/'>
+                    <Brand to='/' style={{textDecoration: 'none'}}>
+                        <FooterImg>
                             <img src={require('../../images/Logo.png').default} alt="OHSEA logo"/>
                         </FooterImg>
                         <SocialLogo>OHSEA</SocialLogo>

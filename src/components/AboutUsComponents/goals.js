@@ -9,25 +9,24 @@ const Goals = () => {
   return (
     <MainDiv>
         <Title>Our <span style = {{color: '#de333f'}}>Goals</span></Title> 
-        <SubTitle>Here are our three most important goals at OHSEA</SubTitle>
 
         <Goaldiv>
             <GoalOutline>
                 <GoalIcon style = {{width: '130px', height: '130px'}}src={schoolIcon}/>
                 <Goaltitle>Schools</Goaltitle>
-                <GoalSubtitle>We want to bring Esports to schools to allow students a chance to experience an industry growing with potentital.</GoalSubtitle>
+                <GoalSubtitle>Bringing Esports to schools to allow students a chance to experience an industry growing with potential.</GoalSubtitle>
             </GoalOutline>
 
             <GoalOutline>
                 <GoalIcon src = {educationIcon}/>
                 <Goaltitle>Experience</Goaltitle>
-                <GoalSubtitle>Experience is a big priority for us and we want students to see the different career opportunities they have in Esports.</GoalSubtitle>
+                <GoalSubtitle>Allowing students to see and experience the different career opportunities they have in Esports.</GoalSubtitle>
             </GoalOutline>
 
             <GoalOutline>
                 <GoalIcon src = {playIcon}/>
                 <Goaltitle>Play</Goaltitle>
-                <GoalSubtitle>At the end of the day, we want students to have fun and enjoy themselves whether it be in tournamnets or managing them.</GoalSubtitle>
+                <GoalSubtitle>Ultimately, we push for students to have fun and enjoy themselves, whether it be in running tournaments or playing in them.</GoalSubtitle>
             </GoalOutline>
 
         </Goaldiv>
@@ -45,7 +44,7 @@ const GoalIcon = styled.img`
 
 const Goaltitle = styled.h1`
     color: white;
-    font-size: 25px;
+    font-size: 1.5rem;
     position: absolute;
     margin-top: 9rem;
     text-align: center;
@@ -54,11 +53,13 @@ const Goaltitle = styled.h1`
 
 const GoalSubtitle = styled.h1`
     color: white;
-    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.5em;
     position: absolute;
     text-align: center;
     width: 250px;
     margin-top: 13rem;
+    font-family: 'UsualRegular', sans-serif;
 `
 
 const Title = styled.h1`
@@ -66,23 +67,13 @@ const Title = styled.h1`
     font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
     line-height: 1.05em;
-    margin-top: 3rem;
+    margin-top: 0;
     display: block;
     text-align: center;
 `
 
-const SubTitle = styled.h3`
-    color: ${colors.white};
-    font-family: 'UsualExtraBold', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.05em;
-    margin-top: 0;
-    text-align: center;
-    position: relative;
-`
-
 const MainDiv = styled.div`
-    height: 1200px;
+    height: 830px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -91,15 +82,15 @@ const MainDiv = styled.div`
 
     @media screen and (max-width: 1000px)
     {
-        height: 1300px; 
+        height: 900px; 
     }
     @media screen and (max-width: 768px)
     {
-        height: 1300px; 
+        height: 900px; 
     }
     @media screen and (max-width: 480px)
     {
-        height: 1300px; 
+        height: 900px; 
     }
 `
 

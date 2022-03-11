@@ -2,6 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import {colors} from '../../globals/colors.js'
 import placeholder from '../../images/logoSpring.png'
+import '../../styles/style.scss'
 
 
 const AboutSnippet = () => {
@@ -10,11 +11,12 @@ const AboutSnippet = () => {
         <InfoRow>
           
           <Column1>
-            <TopLine>Who are <span style ={{color: '#de333f'}}>we?</span></TopLine>
+            <TopLine>Who Are We?</TopLine>
               <TextWrapper>                        
 
-                  <Subtitle>The Ontario High School Esports Association or for short, OHSEA, is an association of highly dedicated high school and university students who are seeking to bring Esports to a high school level. We want high school students to experience the same Esports opportunities that university/college students and professionals do and demonstrate them and new career opportunities. At OHSEA, our goal is to not just to provide fun tournaments of a variety of games to students, but to also demonstrate that there is more to Esports than just the game. At OHSEA, we want students to learn what goes behind the scenes of tournaments and give them hands-on experience of what it takes to run the perfect tournament.</Subtitle>
-                  <Subtitle2>Using our three goals as a foundation, we want future generations of students to realize the potential Esports has for the industry and demonstrate to educators as well the success and positive impact Esports can have in schools. Everyone here at OHSEA understand the challenges that are presented and are committed give students a chance at an opportunity to try something new.</Subtitle2>
+                  <Subtitle>The <span className="red-text-b">Ontario High School Esports Association</span> or for short, <span className="red-text-b">OHSEA</span>, is an association of highly dedicated high school and university students who are seeking to bring <span className="red-text-b">Esports</span> to a high school level. High school students should experience the same Esports opportunities that university/college students and professionals do, and demonstrate them for new career opportunities.</Subtitle>
+                  <Subtitle2>At OHSEA, our goal is to not just to provide fun tournaments of a variety of games to students, but to also demonstrate that there is more to Esports than just the game. We want students to learn what goes behind the scenes of tournaments and give them hands-on experience of what it takes to run one.</Subtitle2>
+                  <Subtitle2>Using our three goals as a foundation, we want <span className="red-text-b">future generations</span> of students to realize the potential Esports has for the industry and demonstrate to educators as well the success and positive impact Esports can have in schools. Everyone here at OHSEA understand the challenges that are presented and are committed give students a chance at an opportunity to try something new.</Subtitle2>
 
               </TextWrapper>
 
@@ -33,8 +35,8 @@ const AboutSnippet = () => {
 
 const InfoContainer = styled.div`
     color: ${colors.background};
-    margin-bottom: 10rem;
-    margin-top: 10rem;
+    margin-bottom: 6rem;
+    margin-top: 18rem;
     display: flex;
     justify-content: center;
     @media screen and (max-width: 768px){
@@ -85,16 +87,17 @@ const TopLine = styled.p`
     line-height: 16px; 
     font-family: 'UsualBold', sans-serif; 
     letter-spacing: 1.4px; 
-    text-transform: uppercase;
+    margin-bottom: 2em;
+    
     @media screen and (max-width: 768px){
         top: 0;
     }
-`
-
-const Subtitle = styled.p`
+    `
+    
+    const Subtitle = styled.p`
     max-width: 1000px;
-    font-size: 18px; 
-    line-height: 24px; 
+    font-size: 1rem; 
+    line-height: 1.9rem; 
     color: black; 
 `
 
@@ -102,8 +105,8 @@ const Subtitle2 = styled.p`
     max-width: 1000px; 
     margin-bottom: 35px;
     margin-top: 24px; 
-    font-size: 18px; 
-    line-height: 24px; 
+    font-size: 1rem; 
+    line-height: 1.9rem; 
     color: black; 
 `
 

@@ -17,7 +17,7 @@ const About = () => (
       <div className="dark-bg bg-events">
         <TitleDiv>
           <IntroTitle>What is <span className="red-text">OHSEA?</span></IntroTitle>
-          <IntroSubtitle>Learn more about OHSEA, the team behind the association, our goals and future asipirations.</IntroSubtitle>
+          <IntroSubtitle><SubtitleRed>Learn more about OHSEA:</SubtitleRed>  The team behind the association, our goals, and future asipirations.</IntroSubtitle>
        </TitleDiv>
       </div>
 
@@ -57,20 +57,26 @@ const IntroTitle = styled.h1`
     font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
     line-height: 1.05em;
-    margin-top: 10rem;
+    margin-top: 7rem;
     display: block;
     text-align: center;
     
 `
 const IntroSubtitle = styled.h3`
     color: ${colors.white};
-    font-family: 'UsualExtraBold', sans-serif;
+    font-family: 'UsualRegular', sans-serif;
     font-size: 1.2rem;
     line-height: 1.05em;
     margin-top: 0;
     position: relative;
     text-align: center;
 
+`
+
+const SubtitleRed = styled.span`
+    color: ${colors.red};
+    font-family: 'UsualBold', sans-serif;
+    margin-right: 6px;
 `
 
 

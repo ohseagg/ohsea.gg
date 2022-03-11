@@ -19,6 +19,7 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarRoute
                     href="https://discord.com/invite/zWc8fymdrG"
                     target="_blank"
+                    rel="noreferrer"
                     >Discord</SidebarRoute>
                 </SideBtnWrap>
 

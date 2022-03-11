@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import "../../styles/style.scss"
 
 /* 
@@ -17,14 +17,17 @@ function GameLogo(props) {
       case 1:
         return (
           <img className="game-logo" src={require('../../images/Valorant.png').default} alt="Valorant"/>
-        );
+        )
       case 2:
         return (
           <img className="game-logo" src={require('../../images/League.png').default} alt="League"/>
-        );
+        )
+      default:
+        return (
+          null
+        )
     }   
   }
-  return(null)
 }
 
 function GameImg(props) {
@@ -36,14 +39,17 @@ function GameImg(props) {
       case 1:
         return (
           <img className="game-img" src={require('../../images/ValCharacters.png').default} alt="Valorant Characters"/>
-        );
+        )
       case 2:
         return (
           <img className="game-img" src={require('../../images/LeagueCharacters.png').default} alt="League Characters"/>
-        );
+        )
+      default:
+        return (
+          null
+        )
     }   
   }
-  return(null)
 }
 
 function Event(props) {

@@ -3,6 +3,8 @@ import { GoChevronRight } from 'react-icons/go';
 import { Link } from "gatsby"
 import styled from "styled-components"
 import {colors} from '../globals/colors.js'
+// import { GoChevronRight } from 'react-icons/go';
+// import { Link } from "gatsby"
 import Layout from "../components/PageLayout/layout"
 import Seo from "../components/SEO/seo"
 import AboutSnippet from "../components/AboutUsComponents/aboutSnippet";

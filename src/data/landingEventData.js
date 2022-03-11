@@ -1,4 +1,4 @@
-export default {
+const data = {
     /*
     update data for events on landing page
     --
@@ -42,3 +42,5 @@ export default {
         detail3: "ON High School Students",
     },
 }
+
+export default data

@@ -1,13 +1,13 @@
 import * as React from "react"
 import { Component } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import {
     Container,
     Box,
     LeftArrow,
     RightArrow,
 } from './gameSelectElements'
-import EventsPage from '../../pages/events'
+// import EventsPage from '../../pages/events'
 
 class GameSelect extends Component {
     constructor(props) {
@@ -29,6 +29,10 @@ class GameSelect extends Component {
                 return (
                     <>League</>
                 );
+            default:
+                return (
+                    null
+                )
         }
     }
 
@@ -37,13 +41,13 @@ class GameSelect extends Component {
         const r = 2
         return (
             <Container>
-                <div onClick={() => this.props.switchHandler(l)} style={{cursor:'pointer'}}>
+                <div aria-hidden="true" onClick={() => this.props.switchHandler(l)} style={{cursor:'pointer'}}>
                     <LeftArrow/>
                 </div>
                 <Box>
                     {this.displayGameText()}
                 </Box>
-                <div onClick={() => this.props.switchHandler(r)} style={{cursor:'pointer'}}> 
+                <div aria-hidden="true" onClick={() => this.props.switchHandler(r)} style={{cursor:'pointer'}}> 
                     <RightArrow/>
                 </div>
             </Container>

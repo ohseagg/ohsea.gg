@@ -1,6 +1,5 @@
 import React from 'react'
 import {Nav, NavbarContainer, NavBrand, NavImg, NavLogo, MobileIcon, BarIcon, NavMenu, NavMenuWrapper, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements'
-import { colors } from "../../../globals/colors"
 import "../../../styles/style.scss"
 
 const Navbar = ({toggle}) => {
@@ -37,6 +36,7 @@ const Navbar = ({toggle}) => {
                             <NavBtnLink 
                             href='https://discord.gg/DB2zUppwSa'
                             target='_blank'
+                            rel="noreferrer"
                             >Discord</NavBtnLink>
                         </NavBtn>
                     </NavMenu>

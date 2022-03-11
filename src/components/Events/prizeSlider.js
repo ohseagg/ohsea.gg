@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Component } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import "../../styles/style.scss"
 import Slider from '@mui/material/Slider'
 import { createTheme, ThemeProvider } from '@mui/material/styles'

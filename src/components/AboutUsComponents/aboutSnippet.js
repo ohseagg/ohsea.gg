@@ -10,7 +10,7 @@ const AboutSnippet = () => {
         <InfoRow>
           
           <Column1>
-            <TopLine>Who are we?</TopLine>
+            <TopLine>Who are <span style ={{color: '#de333f'}}>we?</span></TopLine>
               <TextWrapper>                        
 
                   <Subtitle>The Ontario High School Esports Association or for short, OHSEA, is an association of highly dedicated high school and university students who are seeking to bring Esports to a high school level. We want high school students to experience the same Esports opportunities that university/college students and professionals do and demonstrate them and new career opportunities. At OHSEA, our goal is to not just to provide fun tournaments of a variety of games to students, but to also demonstrate that there is more to Esports than just the game. At OHSEA, we want students to learn what goes behind the scenes of tournaments and give them hands-on experience of what it takes to run the perfect tournament.</Subtitle>
@@ -44,10 +44,11 @@ const InfoContainer = styled.div`
 
 const InfoRow = styled.div`
     display: grid;
+    grid-gap: 7rem;
     grid-auto-columns: minmax(auto, 1fr); 
     align-items: center;
     grid-template-areas: "col1 col2" ;
-    width: 1000px;
+    width: 1250px;
     max-width: 90%;
 
 
@@ -58,17 +59,18 @@ const InfoRow = styled.div`
 
 const Column1 = styled.div`
     grid-area: col1; 
+    width: 600px;
     
 `
 
 const Column2 = styled.div`
     margin-bottom: 15px; 
-    padding: 0 15px; 
     grid-area: col2; 
 `
 
 const TextWrapper = styled.div`
-    max-width: 500px; 
+    max-width: 700px; 
+
   
     @media screen and (max-width: 480px){
         position: relative;
@@ -90,14 +92,14 @@ const TopLine = styled.p`
 `
 
 const Subtitle = styled.p`
-    max-width: 440px;
+    max-width: 1000px;
     font-size: 18px; 
     line-height: 24px; 
     color: white; 
 `
 
 const Subtitle2 = styled.p`
-    max-width: 440px; 
+    max-width: 1000px; 
     margin-bottom: 35px;
     margin-top: 24px; 
     font-size: 18px; 

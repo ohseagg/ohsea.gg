@@ -1,3 +1,4 @@
+/*
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions
   createPage({
@@ -7,3 +8,4 @@ exports.createPages = async ({ actions }) => {
     defer: true,
   })
 }
+*/

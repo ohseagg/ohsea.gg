@@ -14,7 +14,7 @@ import "../styles/style.scss"
 const About = () => (
   <Layout>
     <Seo title="About" />
-      <div className="plain-dark-bg">
+      <div className="dark-bg bg-events">
         <TitleDiv>
           <IntroTitle>What is <span className="red-text">OHSEA?</span></IntroTitle>
           <IntroSubtitle>Learn more about OHSEA, the team behind the association, our goals and future asipirations.</IntroSubtitle>
@@ -22,7 +22,10 @@ const About = () => (
       </div>
 
       <AboutSnippet/>
+
+      <div className="dark-bg bg-events">
       <Goals/>
+      </div>
 
 
   </Layout>
@@ -34,7 +37,6 @@ const TitleDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: ${colors.background}; 
 
     @media screen and (max-width: 1000px)
     {
@@ -55,7 +57,7 @@ const IntroTitle = styled.h1`
     font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
     line-height: 1.05em;
-    margin-top: 3rem;
+    margin-top: 10rem;
     display: block;
     text-align: center;
     

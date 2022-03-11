@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import {colors} from '../../globals/colors.js'
-import placeholder from '../../images/LogoLarge.png'
+import placeholder from '../../images/logoSpring.png'
 
 
 const AboutSnippet = () => {
@@ -79,7 +79,7 @@ const TextWrapper = styled.div`
 `
 
 const TopLine = styled.p`
-    color: white; 
+    color: black; 
     font-size: 30px; 
     position: relative;
     line-height: 16px; 
@@ -95,7 +95,7 @@ const Subtitle = styled.p`
     max-width: 1000px;
     font-size: 18px; 
     line-height: 24px; 
-    color: white; 
+    color: black; 
 `
 
 const Subtitle2 = styled.p`
@@ -104,7 +104,7 @@ const Subtitle2 = styled.p`
     margin-top: 24px; 
     font-size: 18px; 
     line-height: 24px; 
-    color: white; 
+    color: black; 
 `
 
 

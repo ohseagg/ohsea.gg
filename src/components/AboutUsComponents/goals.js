@@ -82,12 +82,11 @@ const SubTitle = styled.h3`
 `
 
 const MainDiv = styled.div`
-    height: 100%;
+    height: 1200px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10rem;
     background: ${colors.background}; 
 
     @media screen and (max-width: 1000px)

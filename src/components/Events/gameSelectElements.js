@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {colors} from '../../globals/colors'
 import { GoChevronLeft, GoChevronRight } from 'react-icons/go';
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
 
 export const Container = styled.div`
     display: flex;

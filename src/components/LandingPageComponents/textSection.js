@@ -10,7 +10,7 @@ const TextSection = () => {
             <div className="medium-header">Join Our Community</div>
             <div className="text">Whether you're a student looking to play in our tournaments or an educator interested in esports, join our exclusive discord to stay up to date on all things OHSEA.</div>
             <div className="link-container">
-            <a href="https://discord.com/invite/zWc8fymdrG" target="_blank" className="red-text" >
+            <a href="https://discord.com/invite/zWc8fymdrG" target="_blank" rel="noreferrer" className="red-text" >
                 Join Discord Server <GoChevronRight className="chevron-link"/>
             </a>
             </div>

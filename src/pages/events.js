@@ -1,15 +1,16 @@
 import * as React from "react"
-import { Component } from "react"
-import { Link } from "gatsby"
+// import { Component } from "react"
+// import { Link } from "gatsby"
 import Layout from "../components/PageLayout/layout"
 import Seo from "../components/SEO/seo"
 import GameSelect from "../components/Events/gameSelect"
-import PrizeSlider from "../components/Events/prizeSlider"
+// import PrizeSlider from "../components/Events/prizeSlider"
 import LargeEvent from "../components/LandingPageComponents/largeEvent"
 
 import data from "../data/landingEventData"
 import  "../styles/style.scss"
 
+// eslint-disable-next-line no-extend-native
 Number.prototype.mod = function(n) {
     return ((this % n) + n) % n;
 }

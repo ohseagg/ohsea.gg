@@ -7,6 +7,7 @@ import '../../styles/style.scss'
 
 const AboutSnippet = () => {
   return (
+    <Wrapper>
       <InfoContainer>
         <InfoRow>
           
@@ -30,17 +31,29 @@ const AboutSnippet = () => {
 
         </InfoRow>
       </InfoContainer>
+    </Wrapper>
   )
 }
 
-const InfoContainer = styled.div`
-    color: ${colors.background};
-    margin-bottom: 6rem;
-    margin-top: 18rem;
+const Wrapper = styled.div`
     display: flex;
     justify-content: center;
-    @media screen and (max-width: 768px){
-        padding: 100px 0; 
+`
+
+const InfoContainer = styled.div`
+    width: 1250px;
+    max-width: 90%;
+    margin-top: 18rem;
+    margin-bottom: 12rem;
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 685px) {
+        margin-top: 10rem;
+        margin-bottom: 8rem;
+    }
+    @media screen and (max-width: 500px) {
+        margin-top: 8rem;
+        margin-bottom: 6rem;
     }
 `
 
@@ -50,64 +63,64 @@ const InfoRow = styled.div`
     grid-auto-columns: minmax(auto, 1fr); 
     align-items: center;
     grid-template-areas: "col1 col2" ;
-    width: 1250px;
-    max-width: 90%;
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1000px) {
         grid-template-areas: 'col1' 'col2';
     }
 `
 
 const Column1 = styled.div`
     grid-area: col1; 
-    width: 600px;
+    /* width: 600px; */
+    width: 100%;
     
 `
 
 const Column2 = styled.div`
     margin-bottom: 15px; 
-    grid-area: col2; 
+    grid-area: col2;
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
 `
 
 const TextWrapper = styled.div`
     max-width: 700px; 
-
-  
-    @media screen and (max-width: 480px){
-        position: relative;
-        right: 1rem;
-    }
 `
 
 const TopLine = styled.p`
-    color: black; 
-    font-size: 30px; 
+    color: ${colors.background};
+    font-size: 1.8rem; 
+    line-height: 0.95em;
     position: relative;
-    line-height: 16px; 
     font-family: 'UsualBold', sans-serif; 
-    letter-spacing: 1.4px; 
     margin-bottom: 2em;
     
     @media screen and (max-width: 768px){
         top: 0;
     }
-    `
+    @media screen and (max-width: 750px) {
+        font-size: 5.4vw;
+    }
+    @media screen and (max-width: 445px) {
+        font-size: 22px;
+    }
+`
     
-    const Subtitle = styled.p`
-    max-width: 1000px;
+const Subtitle = styled.p`
     font-size: 1rem; 
     line-height: 1.9rem; 
-    color: black; 
+    color: ${colors.background};
+    
 `
 
 const Subtitle2 = styled.p`
-    max-width: 1000px; 
     margin-bottom: 35px;
     margin-top: 24px; 
     font-size: 1rem; 
     line-height: 1.9rem; 
-    color: black; 
+    color: ${colors.background};
 `
 
 

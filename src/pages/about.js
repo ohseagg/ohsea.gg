@@ -14,18 +14,24 @@ import "../styles/style.scss"
 const About = () => (
   <Layout>
     <Seo title="About" />
-      <div className="dark-bg bg-events">
-        <TitleDiv>
-          <IntroTitle>What is <span className="red-text">OHSEA?</span></IntroTitle>
-          <IntroSubtitle><SubtitleRed>Learn more about OHSEA:</SubtitleRed>  The team behind the association, our goals, and future asipirations.</IntroSubtitle>
-       </TitleDiv>
-      </div>
+        <div className="dark-bg bg-about">
+            <TitleWrapper>
+                <TitleContainer>
+                    <TitleDiv>
+                        <IntroTitle>What is <span className="red-text">OHSEA?</span></IntroTitle>
+                        <IntroSubtitle>Learn about the team behind the association, our goals, and future asipirations.</IntroSubtitle>
+                    </TitleDiv>
+                </TitleContainer>
+            </TitleWrapper>
+        </div>
 
-      <AboutSnippet/>
+        <AboutSnippet/>
 
-      <div className="dark-bg bg-events">
-      <Goals/>
-      </div>
+            
+        <div className="dark-bg-container-3">
+            <div className="dark-bg"></div>
+        </div>
+        <Goals/>
 
 
   </Layout>
@@ -37,46 +43,50 @@ const TitleDiv = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+`
 
-    @media screen and (max-width: 1000px)
-    {
-        height: 1200px; 
+const TitleWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    @media screen and (max-width: 685px) {
+        margin-top: 50px;
+        margin-bottom: 100px;
     }
-    @media screen and (max-width: 768px)
-    {
-        height: 1200px; 
-    }
-    @media screen and (max-width: 480px)
-    {
-        height: 1200px; 
-    }
-    `
+`
+
+const TitleContainer = styled.div`
+    width: 1250px;
+    max-width: 90%;
+`
 
 const IntroTitle = styled.h1`
     color: ${colors.white};
     font-family: 'UsualExtraBold', sans-serif;
     font-size: 3.4rem;
     line-height: 1.05em;
-    margin-top: 7rem;
+    margin-top: 0;
     display: block;
     text-align: center;
+    @media screen and (max-width: 750px) {
+        font-size: 7.85vw;
+    }
     
 `
 const IntroSubtitle = styled.h3`
     color: ${colors.white};
     font-family: 'UsualRegular', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.05em;
+    font-size: 1.1rem;
+    line-height: 1.5em;
     margin-top: 0;
     position: relative;
     text-align: center;
-
-`
-
-const SubtitleRed = styled.span`
-    color: ${colors.red};
-    font-family: 'UsualBold', sans-serif;
-    margin-right: 6px;
+    @media screen and (max-width: 685px) {
+        font-size: 2.6vw;
+    }
+    @media screen and (max-width: 520px) {
+        font-size: 0.9rem;
+    }
 `
 
 

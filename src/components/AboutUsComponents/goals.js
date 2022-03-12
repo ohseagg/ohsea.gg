@@ -51,7 +51,7 @@ const Goaltitle = styled.h1`
     justify-content: center;
 `
 
-const GoalSubtitle = styled.h1`
+const GoalSubtitle = styled.h3`
     color: white;
     font-size: 1rem;
     line-height: 1.5em;
@@ -60,6 +60,18 @@ const GoalSubtitle = styled.h1`
     width: 250px;
     margin-top: 13rem;
     font-family: 'UsualRegular', sans-serif;
+    @media screen and (max-width: 1000px)
+    {
+        width: 50%;
+    }
+    @media screen and (max-width: 650px)
+    {
+        width: 70%;
+    }
+    @media screen and (max-width: 450px)
+    {
+        width: 80%;
+    }
 `
 
 const Title = styled.h1`
@@ -70,45 +82,48 @@ const Title = styled.h1`
     margin-top: 0;
     display: block;
     text-align: center;
+    @media screen and (max-width: 750px) {
+        font-size: 7.85vw;
+    }
 `
 
 const MainDiv = styled.div`
-    height: 830px;
+    height: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background: ${colors.background}; 
+    margin-top: 40px;
+    background: 'transparent'; 
+    margin-bottom: 0;
 
     @media screen and (max-width: 1000px)
     {
-        height: 900px; 
+        height: 1260px; 
     }
     @media screen and (max-width: 768px)
     {
-        height: 900px; 
+        height: 1350px; 
     }
     @media screen and (max-width: 480px)
     {
-        height: 900px; 
+        /* height: 900px;  */
     }
 `
 
 const Goaldiv = styled.div`
-    max-width: 1000px; 
+    max-width: 1150px; 
     margin: 0 auto; 
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     align-items: center; 
-    grid-gap: 5rem;
+    grid-column-gap: 5rem;
     padding: 0 50px;     
     justify-content: center;
-    @media screen and (max-width: 1000px)
+    @media screen and (max-width: 1150px)
     {
-        grid-template-columns: 1fr 1fr; 
-    
+        grid-column-gap: 3rem;
     }
-    @media screen and (max-width: 768px)
+    @media screen and (max-width: 1000px)
     {
         grid-template-columns: 1fr; 
     }
@@ -129,6 +144,14 @@ const GoalOutline = styled.div`
     width: 300px;
     height: 400px;
     padding: 50px; 
+    @media screen and (max-width: 1150px)
+    {
+        width: 250px;
+    }
+    @media screen and (max-width: 1000px)
+    {
+        width: 100%;
+    }
 `
 
 

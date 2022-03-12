@@ -32,6 +32,7 @@ const data = {
         detail1: "March 14-15",
         detail2: "Double Elimination",
         detail3: "ON High School Students",
+        link: "https://avgl.org/ohsea/39410/bracket",
     },
     LgEvent2: {
         game: 1,
@@ -40,6 +41,7 @@ const data = {
         detail1: "March 16-17",
         detail2: "Double Elimination",
         detail3: "ON High School Students",
+        link: "https://avgl.org/ohsea/39411/events/about",
     },
 }
 

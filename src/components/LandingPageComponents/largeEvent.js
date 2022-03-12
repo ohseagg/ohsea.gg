@@ -1,5 +1,4 @@
 import * as React from "react"
-// import { Link } from "gatsby"
 import "../../styles/style.scss"
 
 /* 
@@ -77,9 +76,13 @@ function Event(props) {
             {props.data ? props.data.detail3 : "Loading"}
           </div>
         </div>
-        <div>
-          <div className="btn-fill">See Details</div>
-        </div>
+        <a href={props.data ? props.data.link : "https://ohsea.gg/"}
+        target="_blank"
+        rel="noreferrer">
+          <div>
+            <div className="btn-fill">See Details</div>
+          </div>
+        </a>
         <div className="game-img-wrapper">
           <GameImg data={props.data} />
         </div>

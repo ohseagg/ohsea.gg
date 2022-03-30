@@ -33,6 +33,7 @@ const data = {
         detail2: "Double Elimination",
         detail3: "ON High School Students",
         link: "https://avgl.org/ohsea/39410/bracket",
+        btnText: "Registrations Closed"
     },
     LgEvent2: {
         game: 1,
@@ -42,6 +43,7 @@ const data = {
         detail2: "Double Elimination",
         detail3: "ON High School Students",
         link: "https://avgl.org/ohsea/39411/events/about",
+        btnText: "Registrations Closed"
     },
 }
 

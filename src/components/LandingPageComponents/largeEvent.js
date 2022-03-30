@@ -80,7 +80,7 @@ function Event(props) {
         target="_blank"
         rel="noreferrer">
           <div>
-            <div className="btn-fill">See Details</div>
+            <div className="btn-fill">{props.data ? props.data.btnText : "Loading"}</div>
           </div>
         </a>
         <div className="game-img-wrapper">

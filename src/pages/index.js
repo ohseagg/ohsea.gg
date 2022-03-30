@@ -21,7 +21,7 @@ const IndexPage = () => (
     <div className="dark-bg">
       <HeroSection />
       <div className="events-section">
-        <div className="medium-header">Upcoming Events</div>
+        <div className="medium-header">Featured Events</div>
         <div className="events">
           <LargeEvent data={data.LgEvent1} filter={0}/>
           <LargeEvent data={data.LgEvent2} filter={0}/>
